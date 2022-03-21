@@ -12,6 +12,92 @@
 </head>
 
 <body class="position-relative">
+  <div id="actionsSection" class="action_section closed">
+    <img class="blur_img" src="./img/blur.png">
+    <div class="filters">
+      <a class="filter-toggler" id="filterButton" type="button" data-toggle="collapse">
+        <span class="navbar-toggler-icon">
+          <span class="toggle_button_iteam"></span>
+          <span class="toggle_button_iteam"></span>
+        </span>
+      </a>
+      <div class="filter_body pt-3">
+        <div class="container filter_body_scrol">
+          <section class="mb-3">
+            <h4 class="m-0">Umumiy</h4>
+            <form class="el_body mt-2">
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label checked"
+                for="checkbox-1">yangi</label>
+              <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">mol go'shti</label>
+              <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">tovuq
+                go'shti</label>
+              <input type="checkbox" id="checkbox-4"><label class="checkbox_label" for="checkbox-4">vegitaryan</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">pishloqli</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">aksiya</label>
+              <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">italyancha</label>
+              <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">daraja</label>
+              <input type="checkbox" id="checkbox-4"><label class="checkbox_label"
+                for="checkbox-4">qo'ziqorinlik</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label checked"
+                for="checkbox-5">barbekyu</label>
+            </form>
+          </section>
+          <section class="mb-3">
+            <h4 class="m-0">Pishloq</h4>
+            <form class="el_body mt-2">
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">redchanitoli</label>
+              <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">motsarellali</label>
+              <input type="checkbox" id="checkbox-3"><label class="checkbox_label checked" for="checkbox-3">chedder
+                pishloqli</label>
+              <input type="checkbox" id="checkbox-4"><label class="checkbox_label checked" for="checkbox-4">ko'k
+                plesenli</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">italyancha
+                pishloqli</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">yangi yumshoq
+                pishloqli</label>
+            </form>
+          </section>
+          <section class="mb-3">
+            <h4 class="m-0">Go'sht</h4>
+            <form class="el_body mt-2">
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Пепперони</label>
+              <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">Свинина</label>
+              <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">Ветчина</label>
+              <input type="checkbox" id="checkbox-4"><label class="checkbox_label" for="checkbox-4">Бекон</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">Говядина</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Чоризо</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">Колбаски</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Куриная
+                грудка</label>
+            </form>
+          </section>
+          <section class="mb-3">
+            <h4 class="m-0">Komponent</h4>
+            <form class="el_body mt-2">
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Креветка</label>
+              <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">Ананасы</label>
+              <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">Шампиньоны</label>
+              <input type="checkbox" id="checkbox-4"><label class="checkbox_label" for="checkbox-4">Лук</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">Перец
+                халапеньо</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Орегано</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">Зеленый
+                перец</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Томаты</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Чеснок</label>
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">Красный
+                перец</label>
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">Оливки</label>
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="buttons container py-3">
+        <a class="clean" href="#">Tozalash</a>
+        <a class="filter" href="#">Saralash</a>
+      </div>
+    </div>
+  </div>
   <header id="header">
     <div id="locTopNav" class="location">
       <div class="container d-flex flex-row align-items-center justify-content-between py-2">
@@ -75,7 +161,7 @@
         </div>
         <div class="collapse-bar col-12 m-0" id="navbarNav">
           <ul class="navbar_nav list-unstyled row">
-            <li class="nav-item login col-12 mb-3">
+            <li class="nav-item login col-12 mb-3 mt-2">
               <a class="nav-link d-flex align-items-center" href="#">
                 <img src="./img/user_mini.png">
                 Akkauntga kirish
@@ -145,7 +231,7 @@
       </nav>
     </div>
   </header>
-  <main class="pb-5">
+  <main class="pb-5" id="main">
     <div class="container">
       <div class="tips_nav">
         <div class="tips_body py-4 d-flex">
@@ -282,7 +368,7 @@
           <h1 class="m-0">
             Pissa
           </h1>
-          <a href="#">
+          <a id="filter1">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -498,7 +584,7 @@
           <h1 class="m-0">
             Sushi
           </h1>
-          <a href="#">
+          <a id="filter2">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -717,7 +803,7 @@
           <h1 class="m-0">
             Zakuskalar
           </h1>
-          <a href="#">
+          <a id="filter3">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -933,7 +1019,7 @@
           <h1 class="m-0">
             Desertlar
           </h1>
-          <a href="#">
+          <a id="filter4">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -1151,7 +1237,7 @@
           <h1 class="m-0">
             Ichimliklar
           </h1>
-          <a href="#">
+          <a id="filter5">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -1369,7 +1455,7 @@
           <h1 class="m-0">
             Ichimliklar
           </h1>
-          <a href="#">
+          <a id="filter6">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -1585,9 +1671,9 @@
       <section class="zakuski mt-4">
         <div class="top d-flex flex-row justify-content-between">
           <h1 class="m-0">
-            Zakuskalar
+            Kombo
           </h1>
-          <a href="#">
+          <a id="filter7">
             <img src="./img/Filter.png">
             Filtrlar
           </a>
@@ -1847,7 +1933,7 @@
 
   <!-- footter -->
 
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="row pt-4 footer_body">
         <div class="col-12 col-sm-6 col-lg-3 logo mb-3">

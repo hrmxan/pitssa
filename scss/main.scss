@@ -4,3 +4,7 @@
 @import "./main/_body_sections";
 @import "./main/_dostavka";
 @import "./_footer";
+@import "./_actions";
+*::-webkit-scrollbar {
+    display: none;
+}

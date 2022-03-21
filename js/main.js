@@ -1,4 +1,3 @@
-
 // navbar uchun toogle
 const navbarButton = document.getElementById('navbarButton');
 const navbarNav = document.getElementById('navbarNav');
@@ -27,11 +26,44 @@ yopishFoot.addEventListener('click', () => {
 });
 
 // when scrooll body, position fixed navbar
-const header = document.getElementById('header');
-window.onscroll = function (e) {
+window.onscroll = function () {
     if (window.pageYOffset > 0) {
         header.classList.add('fixed');
     } else {
         header.classList.remove('fixed');
     }
 }
+const filterButton = document.getElementById('filterButton');
+const actionsSection = document.getElementById('actionsSection');
+const header = document.getElementById('header');
+const main = document.getElementById('main');
+const footer = document.getElementById('footer');
+
+var tooglerActive = true;
+const filterButtonClick = () => {
+    if (tooglerActive) {
+        actionsSection.classList.toggle('closed');
+        header.classList.toggle('blur_back');
+        main.classList.toggle('blur_back');
+        footer.classList.toggle('blur_back');
+        // setTimeout(() => {
+        //     actionsSection.classList.toggle('d-none');
+        // }, 600);
+    }
+}
+
+filterButton.addEventListener('click', filterButtonClick);
+const filter1 = document.getElementById('filter1');
+const filter2 = document.getElementById('filter2');
+const filter3 = document.getElementById('filter3');
+const filter4 = document.getElementById('filter4');
+const filter5 = document.getElementById('filter5');
+const filter6 = document.getElementById('filter6');
+const filter7 = document.getElementById('filter7');
+filter1.addEventListener('click', filterButtonClick);
+filter2.addEventListener('click', filterButtonClick);
+filter3.addEventListener('click', filterButtonClick);
+filter4.addEventListener('click', filterButtonClick);
+filter5.addEventListener('click', filterButtonClick);
+filter6.addEventListener('click', filterButtonClick);
+filter7.addEventListener('click', filterButtonClick);
