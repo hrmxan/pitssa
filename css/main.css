@@ -13,7 +13,6 @@ header.fixed .location {
 header .nav_top_nav {
   background-color: #ffffff;
   z-index: 100;
-  overflow: scroll;
 }
 
 header .location {
