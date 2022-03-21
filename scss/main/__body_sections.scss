@@ -1,0 +1,364 @@
+main {
+
+    .pissa,
+    .sushi,
+    .zakuski,
+    .desert,
+    .ichimliklar,
+    .sous {
+        .top {
+            h1 {
+                font-family: $fontheader;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 32px;
+                color: #191919;
+
+            }
+
+            a {
+                background: #FFFFFF;
+                border: 1px solid #F0F0F0;
+                box-sizing: border-box;
+                border-radius: 6px;
+                text-decoration: none;
+                height: 32px;
+                padding: 0 15px;
+                font-family: $fontheader;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                /* Black */
+
+                color: #191919;
+
+                img {
+                    width: 12px;
+                    height: 12px;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .body {
+            .card {
+                background: #FFFFFF;
+                border: 1px solid #F0F0F0;
+                box-sizing: border-box;
+                border-radius: 12px;
+
+                &.new::before {
+                    content: 'NEW';
+                    width: 44px;
+                    height: 22px;
+                    border-radius: 0 6px 6px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #E23535;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    z-index: 1;
+
+                    font-family: $fontheader;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                }
+
+                &.xit::before {
+                    content: 'XIT';
+                    width: 44px;
+                    height: 22px;
+                    border-radius: 0 6px 6px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #E23535;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    z-index: 1;
+
+                    font-family: $fontheader;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                }
+
+                .card_img_body {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 12px;
+                    }
+
+                    &.kombo::before {
+                        content: '18% gacha';
+                        width: 60px;
+                        padding: 2px 5px;
+                        border-radius: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        background: linear-gradient(to bottom, #8e3dee, #57349f);
+                        position: absolute;
+                        top: 5%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 1;
+
+                        font-family: $fontheader;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 14px;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .card_body {
+                    h4 {
+                        font-family: $fontheader;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #191919;
+                        margin: 8px 0px;
+                    }
+
+                    p {
+                        font-family: $fontheader;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #191919;
+                        margin: 8px 0px;
+                    }
+
+                    .prise {
+                        a.prise_sum {
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            padding: 7px 16px;
+                            height: 32px;
+                            background: #FFEEE2;
+                            border-radius: 6px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #FF7010;
+                        }
+
+                        a.button_select {
+                            text-decoration: none;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 13px 32px;
+                            background: #FF7010;
+                            border-radius: 6px;
+
+                            font-family: $fontheader;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #FFFFFF;
+                        }
+
+                        span {
+                            font-family: $fontheader;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-decoration-line: line-through;
+                            color: #A5A5A5;
+                            flex: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px) {
+    main {
+
+        .pissa,
+        .sushi,
+        .zakuski,
+        .desert,
+        .ichimliklar,
+        .sous {
+            .body {
+                .card {
+                    width: 48%;
+
+                    .card_img_body {
+                        img {
+                            width: 100%;
+                            height: initial;
+                            border-radius: 0;
+                        }
+                        &.kombo::before {
+                            content: '18% gacha';
+                            width: initial;
+                            padding: 5px 10px;
+                            border-radius: 50px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            background: linear-gradient(to bottom, #8e3dee, #57349f);
+                            position: absolute;
+                            top: 5%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 1;
+    
+                            font-family: $fontheader;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .card_body {
+                        h4 {
+                            font-family: $fontheader;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #191919;
+                            margin: 8px 0px;
+                        }
+
+                        p {
+                            font-family: $fontheader;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #191919;
+                            margin: 8px 0px;
+                        }
+
+                        .prise {
+                            a.prise_sum {
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                                padding: 7px 16px;
+                                height: 32px;
+                                background: #FFEEE2;
+                                border-radius: 6px;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #FF7010;
+                            }
+
+                            a.button_select {
+                                text-decoration: none;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 13px 32px;
+                                background: #FF7010;
+                                border-radius: 6px;
+
+                                font-family: $fontheader;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #FFFFFF;
+                            }
+
+                            span {
+                                font-family: $fontheader;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 16px;
+                                text-decoration-line: line-through;
+                                color: #A5A5A5;
+                                flex: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    main {
+
+        .pissa,
+        .sushi,
+        .zakuski,
+        .desert,
+        .ichimliklar,
+        .sous {
+            .body {
+                .card {
+                    .card_img_body {
+                        width: 100%;
+                    }
+
+                    .card_body {
+
+                        .prise {
+                            a.prise_sum {
+                                background: transparent;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    main {
+
+        .pissa,
+        .sushi,
+        .zakuski,
+        .desert,
+        .ichimliklar,
+        .sous {
+            .body {
+                .card {
+                    width: 24%;
+                }
+            }
+        }
+    }
+}
