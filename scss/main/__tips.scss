@@ -1,20 +1,41 @@
 main {
     background-color: #F9F9F9;
 
+    .tip-nav-con {
+        background-color: #FFFFFF;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid #F0F0F0;
+        border-top: 1px solid #F0F0F0;
+    }
+
     .tips_nav {
-        overflow-y: scroll;
+        display: flex;
+        flex-direction: row;
 
         &::-webkit-scrollbar {
             display: none;
         }
 
+        &.top_sticky {
+
+            .tips_body {
+
+                .mini_card {
+                    border: 1px solid #F0F0F0;
+                }
+            }
+        }
 
         .tips_body {
-            min-width: 880px;
-
+            flex-grow: 2;
+            display: flex;
+            flex-direction: row;
+            overflow-y: scroll;
 
             .mini_card {
-                width: 100px;
+                min-width: 100px;
                 height: 40px;
                 margin-right: 10px;
                 border-radius: 4px;
@@ -33,6 +54,12 @@ main {
                     color: #000000;
 
                 }
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                }
 
                 &.active strong {
                     color: #E23535;
@@ -44,6 +71,8 @@ main {
     }
 
     .tips_content {
+        display: flex;
+        flex-direction: row;
         overflow-x: scroll;
 
         &::-webkit-scrollbar {
@@ -51,7 +80,7 @@ main {
         }
 
         .tips_content_body {
-            width: 1200px;
+            flex-grow: 1;
 
             .tips_card {
                 display: flex;
@@ -119,8 +148,8 @@ main {
                 font-size: 14px;
                 line-height: 18px;
 
-                
-                
+
+
                 background: #FFFFFF;
                 border: 1px solid #F0F0F0;
                 border-radius: 6px;
@@ -136,6 +165,7 @@ main {
                     font-size: 14px;
                     line-height: 18px;
                 }
+
                 input::placeholder {
                     color: #A5A5A5;
                     font-family: $fontheader;
@@ -162,6 +192,7 @@ main {
                     align-items: center;
                     position: absolute;
                     right: 0;
+
                     img {
                         width: 16px;
                         height: 16px;
@@ -187,6 +218,7 @@ main {
                 border-radius: 6px;
                 padding: 0 20px;
                 margin-left: 15px;
+
                 img {
                     width: 16px;
                     height: 16px;
@@ -208,9 +240,38 @@ main {
                 display: none;
             }
 
+            &.top_sticky {
+                .tips_body {
+                    .mini_card {
+                        min-width: 100px;
+                        height: 40px;
+                        margin-right: 10px;
+                        border-radius: 4px;
+
+                        img {
+                            height: 24px;
+                        }
+
+                        a {
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-around;
+                        }
+
+                        strong {
+                            font-family: $fontheader;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+
 
             .tips_body {
-                min-width: 1160px;
 
 
                 .mini_card {
@@ -222,6 +283,11 @@ main {
 
                     img {
                         height: 32px;
+                    }
+                    a {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     strong {
@@ -251,8 +317,6 @@ main {
             }
 
             .tips_content_body {
-                width: 1200px;
-
                 .tips_card {
                     display: flex;
                     flex-direction: column;

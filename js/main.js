@@ -26,12 +26,38 @@ yopishFoot.addEventListener('click', () => {
 });
 
 // when scrooll body, position fixed navbar
+const tipNavCont = document.getElementById('tipNavCont');
+const tipsNav = document.getElementById('tipsNav');
+const navTopNav = document.getElementById('navTopNav');
+
+let scroll = window.pageYOffset;
+let scrollTop = 0;
 window.onscroll = function () {
     if (window.pageYOffset > 0) {
         header.classList.add('fixed');
     } else {
         header.classList.remove('fixed');
     }
+    if (window.pageYOffset > 104) {
+        scroll = window.pageYOffset;
+        tipNavCont.classList.add('tip-nav-con');
+        tipsNav.classList.add('top_sticky');
+        navTopNav.classList.add('d-none');
+        if (scroll <= scrollTop) {
+            tipNavCont.classList.add('d-none');
+            navTopNav.classList.remove('d-none');
+        } else {
+            tipNavCont.classList.remove('d-none');
+            navTopNav.classList.add('d-none');
+        }
+    } else {
+        tipNavCont.classList.remove('tip-nav-con');
+        tipsNav.classList.remove('top_sticky');
+        navTopNav.classList.remove('d-none');
+        tipNavCont.classList.remove('d-none');
+    }
+    console.log('scroll:' + scroll + ' scrollTop:' + scrollTop);
+    scrollTop = scroll;
 }
 const filterButton = document.getElementById('filterButton');
 const actionsSection = document.getElementById('actionsSection');
@@ -67,3 +93,11 @@ filter4.addEventListener('click', filterButtonClick);
 filter5.addEventListener('click', filterButtonClick);
 filter6.addEventListener('click', filterButtonClick);
 filter7.addEventListener('click', filterButtonClick);
+
+// checkbox filterlar uchun 
+const checkbox_label = document.querySelectorAll('.checkbox_label');
+checkbox_label.forEach(element => {
+    element.addEventListener('click', () => {
+        element.classList.toggle('checked')
+    });
+});

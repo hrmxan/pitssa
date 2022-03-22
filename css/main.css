@@ -324,20 +324,50 @@ main {
   background-color: #F9F9F9;
 }
 
+main .tip-nav-con {
+  background-color: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #F0F0F0;
+  border-top: 1px solid #F0F0F0;
+}
+
 main .tips_nav {
-  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main .tips_nav::-webkit-scrollbar {
   display: none;
 }
 
+main .tips_nav.top_sticky .tips_body .mini_card {
+  border: 1px solid #F0F0F0;
+}
+
 main .tips_nav .tips_body {
-  min-width: 880px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-y: scroll;
 }
 
 main .tips_nav .tips_body .mini_card {
-  width: 100px;
+  min-width: 100px;
   height: 40px;
   margin-right: 10px;
   border-radius: 4px;
@@ -357,11 +387,33 @@ main .tips_nav .tips_body .mini_card strong {
   color: #000000;
 }
 
+main .tips_nav .tips_body .mini_card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 main .tips_nav .tips_body .mini_card.active strong {
   color: #E23535;
 }
 
 main .tips_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   overflow-x: scroll;
 }
 
@@ -370,7 +422,9 @@ main .tips_content::-webkit-scrollbar {
 }
 
 main .tips_content .tips_content_body {
-  width: 1200px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main .tips_content .tips_content_body .tips_card {
@@ -578,8 +632,33 @@ main .check_loc .body a.send_button img {
   main .tips_nav::-webkit-scrollbar {
     display: none;
   }
-  main .tips_nav .tips_body {
-    min-width: 1160px;
+  main .tips_nav.top_sticky .tips_body .mini_card {
+    min-width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  main .tips_nav.top_sticky .tips_body .mini_card img {
+    height: 24px;
+  }
+  main .tips_nav.top_sticky .tips_body .mini_card a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .tips_nav.top_sticky .tips_body .mini_card strong {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
   }
   main .tips_nav .tips_body .mini_card {
     width: 135px;
@@ -590,6 +669,18 @@ main .check_loc .body a.send_button img {
   }
   main .tips_nav .tips_body .mini_card img {
     height: 32px;
+  }
+  main .tips_nav .tips_body .mini_card a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .tips_nav .tips_body .mini_card strong {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -607,9 +698,6 @@ main .check_loc .body a.send_button img {
   }
   main .tips_content::-webkit-scrollbar {
     display: none;
-  }
-  main .tips_content .tips_content_body {
-    width: 1200px;
   }
   main .tips_content .tips_content_body .tips_card {
     display: -webkit-box;
@@ -1287,17 +1375,29 @@ footer .footer_body .copy p {
   border-radius: 16px 16px 0px 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  overflow-y: scroll;
 }
 
-.action_section .filters .filter-toggler {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -50px;
-  right: 10px;
+.action_section .filters .filter_top {
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
 }
 
-.action_section .filters .filter-toggler .navbar-toggler-icon {
+.action_section .filters .filter_top h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #191919;
+}
+
+.action_section .filters .filter_top .filter-toggler {
+  width: 30px;
+  height: 30px;
+}
+
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1312,25 +1412,21 @@ footer .footer_body .copy p {
   height: 100%;
 }
 
-.action_section .filters .filter-toggler .navbar-toggler-icon span {
-  height: 3px;
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span {
+  height: 2px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #A5A5A5;
   border-radius: 10px;
 }
 
-.action_section .filters .filter-toggler .navbar-toggler-icon span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translateY(2px);
-          transform: rotate(45deg) translateY(2px);
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(1px);
+          transform: rotate(45deg) translateY(1px);
 }
 
-.action_section .filters .filter-toggler .navbar-toggler-icon span:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translateY(-2px);
-          transform: rotate(-45deg) translateY(-2px);
-}
-
-.action_section .filters .top_cap {
-  background-color: #FFFFFF;
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translateY(-1px);
+          transform: rotate(-45deg) translateY(-1px);
 }
 
 .action_section .filters .filter_body {
@@ -1363,6 +1459,8 @@ footer .footer_body .copy p {
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1428,6 +1526,130 @@ footer .footer_body .copy p {
 .blur_back {
   -webkit-filter: blur(10px);
           filter: blur(10px);
+}
+
+@media only screen and (min-width: 768px) {
+  .action_section.closed {
+    bottom: 0;
+    left: initial;
+    right: -100vw;
+  }
+  .action_section.closed .filters {
+    bottom: 0;
+    left: initial;
+    right: -100%;
+  }
+  .action_section.closed img {
+    display: none;
+  }
+  .action_section .filters {
+    bottom: 0;
+    left: initial;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-y: scroll;
+  }
+  .action_section .filters .filter_top {
+    border-bottom: 1px solid #F0F0F0;
+    background-color: #FFFFFF;
+  }
+  .action_section .filters .filter_top h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #191919;
+  }
+  .action_section .filters .filter_body {
+    overflow-y: scroll;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .action_section .filters .filter_body section h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #191919;
+    opacity: 0.4;
+  }
+  .action_section .filters .filter_body section form {
+    min-height: 100%;
+  }
+  .action_section .filters .filter_body section form input {
+    display: none;
+  }
+  .action_section .filters .filter_body section form label {
+    padding: 10px 16px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 4px 8px 0;
+    color: #191919;
+  }
+  .action_section .filters .filter_body section form label.checked {
+    border: none;
+    background: #FF7010;
+    color: #FFFFFF;
+  }
+  .action_section .filters .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .action_section .filters .buttons a {
+    border-radius: 6px;
+    height: 44px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    width: 45%;
+  }
+  .action_section .filters .buttons a.clean {
+    color: #FF7010;
+    border: 1px solid #FF7010;
+  }
+  .action_section .filters .buttons a.filter {
+    color: #FFFFFF;
+    background: #FF7010;
+  }
 }
 
 *::-webkit-scrollbar {

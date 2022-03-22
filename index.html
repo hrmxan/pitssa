@@ -11,22 +11,31 @@
   <title>pizza</title>
 </head>
 
+
+<!-- actionlar uchun page -->
+
+
 <body class="position-relative">
   <div id="actionsSection" class="action_section closed">
     <img class="blur_img" src="./img/blur.png">
     <div class="filters">
-      <a class="filter-toggler" id="filterButton" type="button" data-toggle="collapse">
-        <span class="navbar-toggler-icon">
-          <span class="toggle_button_iteam"></span>
-          <span class="toggle_button_iteam"></span>
-        </span>
-      </a>
-      <div class="filter_body pt-3">
+      <div class="filter_top py-2 container d-flex flex-row justify-content-between align-items-center">
+        <h4 class="m-0">Filterlar</h4>
+        <a class="filter-toggler" id="filterButton" type="button" data-toggle="collapse">
+          <span class="navbar-toggler-icon">
+            <span class="toggle_button_iteam"></span>
+            <span class="toggle_button_iteam"></span>
+          </span>
+        </a>
+      </div>
+     
+      <div class="filter_body pt-2">
+        
         <div class="container filter_body_scrol">
           <section class="mb-3">
             <h4 class="m-0">Umumiy</h4>
             <form class="el_body mt-2">
-              <input type="checkbox" id="checkbox-1"><label class="checkbox_label checked"
+              <input type="checkbox" id="checkbox-1"><label class="checkbox_label"
                 for="checkbox-1">yangi</label>
               <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">mol go'shti</label>
               <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">tovuq
@@ -38,7 +47,7 @@
               <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">daraja</label>
               <input type="checkbox" id="checkbox-4"><label class="checkbox_label"
                 for="checkbox-4">qo'ziqorinlik</label>
-              <input type="checkbox" id="checkbox-5"><label class="checkbox_label checked"
+              <input type="checkbox" id="checkbox-5"><label class="checkbox_label"
                 for="checkbox-5">barbekyu</label>
             </form>
           </section>
@@ -47,9 +56,9 @@
             <form class="el_body mt-2">
               <input type="checkbox" id="checkbox-1"><label class="checkbox_label" for="checkbox-1">redchanitoli</label>
               <input type="checkbox" id="checkbox-2"><label class="checkbox_label" for="checkbox-2">motsarellali</label>
-              <input type="checkbox" id="checkbox-3"><label class="checkbox_label checked" for="checkbox-3">chedder
+              <input type="checkbox" id="checkbox-3"><label class="checkbox_label" for="checkbox-3">chedder
                 pishloqli</label>
-              <input type="checkbox" id="checkbox-4"><label class="checkbox_label checked" for="checkbox-4">ko'k
+              <input type="checkbox" id="checkbox-4"><label class="checkbox_label" for="checkbox-4">ko'k
                 plesenli</label>
               <input type="checkbox" id="checkbox-5"><label class="checkbox_label" for="checkbox-5">italyancha
                 pishloqli</label>
@@ -98,6 +107,12 @@
       </div>
     </div>
   </div>
+
+
+  <!-- header -->
+
+
+
   <header id="header">
     <div id="locTopNav" class="location">
       <div class="container d-flex flex-row align-items-center justify-content-between py-2">
@@ -232,83 +247,91 @@
     </div>
   </header>
   <main class="pb-5" id="main">
-    <div class="container">
-      <div class="tips_nav">
-        <div class="tips_body py-4 d-flex">
-          <div class="mini_card d-flex align-items-center justify-content-center active">
-            <a href="#"
-              class=" w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/aksiya.png" alt="pissa icon">
-              <strong>
-                aksiyalar
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/pissa_icon.png" alt="pissa icon">
-              <strong>
-                pitssa
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/sushi.png" alt="pissa icon">
-              <strong>
-                sushi
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/napitki.png" alt="pissa icon">
-              <strong>
-                ichimliklar
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/zakuska.png" alt="pissa icon">
-              <strong>
-                zakuska
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/kombo.png" alt="pissa icon">
-              <strong>
-                kombo
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/desert.png" alt="pissa icon">
-              <strong>
-                desert
-              </strong>
-            </a>
-          </div>
-          <div class="mini_card d-flex align-items-center justify-content-center">
-            <a href="#"
-              class="w-100 h-100 d-flex flex-row align-items-center justify-content-around text-decoration-none flex-lg-column align-items-lg-center justify-content-lg-center">
-              <img src="./img/Sauce.png" alt="pissa icon">
-              <strong>
-                sous
-              </strong>
-            </a>
+
+    <div id="tipNavCont" class="container-fluid p-0">
+      <div class="container">
+        <div id="tipsNav" class="tips_nav">
+          <div class="tips_body py-3">
+            <div class="mini-card-body d-flex flex-row align-items-center">
+              <div class="mini_card d-flex align-items-center justify-content-center active">
+                <a href="#"
+                  class=" w-100 h-100 text-decoration-none">
+                  <img src="./img/aksiya.png" alt="pissa icon">
+                  <strong>
+                    aksiyalar
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/pissa_icon.png" alt="pissa icon">
+                  <strong>
+                    pitssa
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/sushi.png" alt="pissa icon">
+                  <strong>
+                    sushi
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/napitki.png" alt="pissa icon">
+                  <strong>
+                    ichimliklar
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/zakuska.png" alt="pissa icon">
+                  <strong>
+                    zakuska
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/kombo.png" alt="pissa icon">
+                  <strong>
+                    kombo
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/desert.png" alt="pissa icon">
+                  <strong>
+                    desert
+                  </strong>
+                </a>
+              </div>
+              <div class="mini_card d-flex align-items-center justify-content-center">
+                <a href="#"
+                  class="w-100 h-100 text-decoration-none">
+                  <img src="./img/Sauce.png" alt="pissa icon">
+                  <strong>
+                    sous
+                  </strong>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="container">
       <div class="tips_content">
         <div class="tips_content_body d-flex pb-4">
           <div class="tips_card"
