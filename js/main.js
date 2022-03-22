@@ -26,6 +26,7 @@ yopishFoot.addEventListener('click', () => {
 });
 
 // when scrooll body, position fixed navbar
+const tipNavContMask = document.getElementById('tipNavContMask');
 const tipNavCont = document.getElementById('tipNavCont');
 const tipsNav = document.getElementById('tipsNav');
 const navTopNav = document.getElementById('navTopNav');
@@ -33,32 +34,40 @@ const navTopNav = document.getElementById('navTopNav');
 let scroll = window.pageYOffset;
 let scrollTop = 0;
 window.onscroll = function () {
-    if (window.pageYOffset > 0) {
-        header.classList.add('fixed');
-    } else {
-        header.classList.remove('fixed');
-    }
     if (window.pageYOffset > 104) {
-        scroll = window.pageYOffset;
-        tipNavCont.classList.add('tip-nav-con');
-        tipsNav.classList.add('top_sticky');
-        navTopNav.classList.add('d-none');
-        if (scroll <= scrollTop) {
-            tipNavCont.classList.add('d-none');
-            navTopNav.classList.remove('d-none');
+        header.classList.add('fixed');
+        if (window.pageYOffset > tipNavCont.offsetHeight + 104) {
+            scroll = window.pageYOffset;
+            tipNavContMask.classList.remove('d-none');
+            tipNavContMask.offsetHeight = tipNavCont.offsetHeight;
+            tipNavCont.classList.add('tip-nav-con');
+            tipsNav.classList.add('top_sticky');
+            if (scroll <= scrollTop) {
+                tipNavCont.classList.add('d-none');
+                navTopNav.classList.remove('d-none');
+                console.log('if scroll:' + scroll + ' scrollTop:' + scrollTop);
+            } else {
+                tipNavCont.classList.remove('d-none');
+                navTopNav.classList.add('d-none');
+                console.log('else scroll:' + scroll + ' scrollTop:' + scrollTop);
+            }
         } else {
+            tipNavCont.classList.remove('tip-nav-con');
+            tipsNav.classList.remove('top_sticky');
+            navTopNav.classList.remove('d-none');
             tipNavCont.classList.remove('d-none');
-            navTopNav.classList.add('d-none');
         }
     } else {
+        header.classList.remove('fixed');
         tipNavCont.classList.remove('tip-nav-con');
         tipsNav.classList.remove('top_sticky');
         navTopNav.classList.remove('d-none');
         tipNavCont.classList.remove('d-none');
     }
-    console.log('scroll:' + scroll + ' scrollTop:' + scrollTop);
     scrollTop = scroll;
 }
+
+
 const filterButton = document.getElementById('filterButton');
 const actionsSection = document.getElementById('actionsSection');
 const header = document.getElementById('header');
