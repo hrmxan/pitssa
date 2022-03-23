@@ -1,6 +1,9 @@
-header {
+main {
     .mini_action {
         z-index: 100;
+        position: fixed;
+        left: 0;
+        bottom: 0;
 
         a {
             position: relative;
@@ -15,8 +18,7 @@ header {
             box-shadow: 0 0 5px 4px #0000001c;
 
             position: absolute;
-            top: 100vh;
-            transform: translateY(-76px);
+            bottom: 10px;
             right: 10px;
 
             img {
