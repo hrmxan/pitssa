@@ -30,12 +30,14 @@ const tipNavContMask = document.getElementById('tipNavContMask');
 const tipNavCont = document.getElementById('tipNavCont');
 const tipsNav = document.getElementById('tipsNav');
 const navTopNav = document.getElementById('navTopNav');
+const miniActions = document.getElementById('miniActions');
 
 let scroll = window.pageYOffset;
 let scrollTop = 0;
 window.onscroll = function () {
     if (window.pageYOffset > 104) {
         header.classList.add('fixed');
+        miniActions.classList.remove('d-none');
         if (window.pageYOffset > tipNavCont.offsetHeight + 104) {
             scroll = window.pageYOffset;
             tipNavContMask.classList.remove('d-none');
@@ -45,11 +47,9 @@ window.onscroll = function () {
             if (scroll <= scrollTop) {
                 tipNavCont.classList.add('d-none');
                 navTopNav.classList.remove('d-none');
-                console.log('if scroll:' + scroll + ' scrollTop:' + scrollTop);
             } else {
                 tipNavCont.classList.remove('d-none');
                 navTopNav.classList.add('d-none');
-                console.log('else scroll:' + scroll + ' scrollTop:' + scrollTop);
             }
         } else {
             tipNavCont.classList.remove('tip-nav-con');
@@ -59,6 +59,7 @@ window.onscroll = function () {
         }
     } else {
         header.classList.remove('fixed');
+        miniActions.classList.add('d-none');
         tipNavCont.classList.remove('tip-nav-con');
         tipsNav.classList.remove('top_sticky');
         navTopNav.classList.remove('d-none');

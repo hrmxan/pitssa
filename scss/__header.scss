@@ -1,18 +1,25 @@
 header {
-   &.fixed {
-    position: fixed;
-    background-color: #ffffff;
-    width: 100%;
-    z-index: 100;
-    .location {
-        height: 0;
-        overflow: hidden;
+    
+
+    border-bottom: 1px solid #F0F0F0;
+    border-top: 1px solid #F0F0F0;
+
+    &.fixed {
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 100;
+
+        .location {
+            height: 0;
+            overflow: hidden;
+        }
     }
-   }
-   .nav_top_nav {
-       background-color: #ffffff;
-       z-index: 100;
-   }
+
+    .nav_top_nav {
+        background-color: #ffffff;
+        z-index: 100;
+    }
 
     .location {
         height: 44px;
@@ -171,17 +178,20 @@ header {
 
                     &.click {
                         justify-content: center;
+
                         .toggle_button_iteam:nth-child(1) {
                             transform: rotate(225deg);
                             transition: 0.5s;
                         }
+
                         .toggle_button_iteam:nth-child(2) {
                             transform: rotate(135deg);
                             transition: 0.5s;
                         }
+
                         .toggle_button_iteam:nth-child(3) {
-                           width: 0;
-                           transition: 0s;
+                            width: 0;
+                            transition: 0s;
                         }
                     }
                 }
