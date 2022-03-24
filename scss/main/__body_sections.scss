@@ -52,6 +52,7 @@ main {
                 border: 1px solid #F0F0F0;
                 box-sizing: border-box;
                 border-radius: 12px;
+                cursor: pointer;
 
                 &.new::before {
                     content: 'NEW';

@@ -4,8 +4,10 @@
 @import "./main/_body_sections";
 @import "./main/_dostavka";
 @import "./_footer";
-@import "./_actions";
-@import "./_mini_actions";
+@import "./actions/_actions";
+@import "./actions/_products";
+@import "./actions/_filters";
+@import "./actions/_mini_actions";
 *::-webkit-scrollbar {
     display: none;
 }

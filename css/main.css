@@ -798,6 +798,7 @@ main .sous .body .card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 main .pissa .body .card.new::before,
@@ -1359,173 +1360,133 @@ footer .footer_body .copy p {
   height: 100%;
 }
 
-.action_section .filters {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80vh;
-  background: #FFFFFF;
-  border-radius: 16px 16px 0px 0px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow-y: scroll;
+.blur_back {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
-.action_section .filters.off {
-  bottom: -100%;
-}
-
-.action_section .filters .filter_top {
-  border-bottom: 1px solid #F0F0F0;
-  background-color: #FFFFFF;
-}
-
-.action_section .filters .filter_top h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  color: #191919;
-}
-
-.action_section .filters .filter_top .filter-toggler {
-  width: 30px;
-  height: 30px;
-}
-
-.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span {
-  height: 2px;
-  width: 100%;
-  background-color: #A5A5A5;
-  border-radius: 10px;
-}
-
-.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translateY(1px);
-          transform: rotate(45deg) translateY(1px);
-}
-
-.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translateY(-1px);
-          transform: rotate(-45deg) translateY(-1px);
-}
-
-.action_section .filters .filter_body {
-  overflow-y: scroll;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.action_section .filters .filter_body section h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #191919;
-  opacity: 0.4;
-}
-
-.action_section .filters .filter_body section form {
-  min-height: 100%;
-}
-
-.action_section .filters .filter_body section form input {
-  display: none;
-}
-
-.action_section .filters .filter_body section form label {
-  padding: 10px 16px;
-  background: #FFFFFF;
-  border: 1px solid #F0F0F0;
-  border-radius: 6px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0px 4px 8px 0;
-  color: #191919;
-}
-
-.action_section .filters .filter_body section form label.checked {
-  border: none;
-  background: #FF7010;
-  color: #FFFFFF;
-}
-
-.action_section .filters .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.action_section .filters .buttons a {
-  border-radius: 6px;
-  height: 44px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none;
-  width: 45%;
-}
-
-.action_section .filters .buttons a.clean {
-  color: #FF7010;
-  border: 1px solid #FF7010;
-}
-
-.action_section .filters .buttons a.filter {
-  color: #FFFFFF;
-  background: #FF7010;
+@media only screen and (min-width: 768px) {
+  .action_section.closed {
+    bottom: 0;
+    left: initial;
+    right: -100vw;
+  }
+  .action_section.closed img.blur_img {
+    display: none;
+  }
+  .action_section .filters {
+    bottom: 0;
+    left: initial;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-y: scroll;
+  }
+  .action_section .filters.off {
+    bottom: 0;
+    left: initial;
+    right: -100%;
+  }
+  .action_section .filters .filter_top {
+    border-bottom: 1px solid #F0F0F0;
+    background-color: #FFFFFF;
+  }
+  .action_section .filters .filter_top h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #191919;
+  }
+  .action_section .filters .filter_body {
+    overflow-y: scroll;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .action_section .filters .filter_body section h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #191919;
+    opacity: 0.4;
+  }
+  .action_section .filters .filter_body section form {
+    min-height: 100%;
+  }
+  .action_section .filters .filter_body section form input {
+    display: none;
+  }
+  .action_section .filters .filter_body section form label {
+    padding: 10px 16px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 4px 8px 0;
+    color: #191919;
+  }
+  .action_section .filters .filter_body section form label.checked {
+    border: none;
+    background: #FF7010;
+    color: #FFFFFF;
+  }
+  .action_section .filters .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .action_section .filters .buttons a {
+    border-radius: 6px;
+    height: 44px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    width: 45%;
+  }
+  .action_section .filters .buttons a.clean {
+    color: #FF7010;
+    border: 1px solid #FF7010;
+  }
+  .action_section .filters .buttons a.filter {
+    color: #FFFFFF;
+    background: #FF7010;
+  }
 }
 
 .action_section .products {
@@ -1540,7 +1501,7 @@ footer .footer_body .copy p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: #FFFFFF;
   border-radius: 16px 16px 0px 0px;
   -webkit-transition: 0.5s;
@@ -1606,8 +1567,13 @@ footer .footer_body .copy p {
 .action_section .products .product_body {
   overflow-y: scroll;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.action_section .products .product_body.scrolling .top img {
+  width: 100px;
+  height: 100px;
 }
 
 .action_section .products .product_body .top {
@@ -1620,6 +1586,61 @@ footer .footer_body .copy p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.action_section .products .product_body .top.new::before {
+  content: 'NEW';
+  width: 44px;
+  height: 22px;
+  border-radius: 0 6px 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E23535;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.action_section .products .product_body .top.xit::before {
+  content: 'XIT';
+  width: 44px;
+  height: 22px;
+  border-radius: 0 6px 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #E23535;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
 }
 
 .action_section .products .product_body .top img {
@@ -1627,6 +1648,8 @@ footer .footer_body .copy p {
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .action_section .products .product_body .body_section h4 {
@@ -1673,6 +1696,9 @@ footer .footer_body .copy p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard {
@@ -1689,6 +1715,10 @@ footer .footer_body .copy p {
   margin-right: 12px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard:last-of-type {
+  margin-right: 0;
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.checked .img-top {
@@ -1909,6 +1939,9 @@ footer .footer_body .copy p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard {
@@ -1925,6 +1958,10 @@ footer .footer_body .copy p {
   margin-right: 12px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard:last-of-type {
+  margin-right: 0;
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.checked .img-top {
@@ -2101,20 +2138,253 @@ footer .footer_body .copy p {
   background: #FF7010;
 }
 
-.blur_back {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+@media only screen and (min-width: 768px) {
+  .action_section .products {
+    bottom: 0;
+    left: initial;
+    right: 0;
+    width: 460px;
+    height: 100%;
+    border-radius: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-y: scroll;
+  }
+  .action_section .products.off {
+    bottom: -100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .action_section .products {
+    overflow-y: scroll;
+    width: 1070px;
+    height: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 16px;
+  }
+  .action_section .products.off {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .action_section .products .product_body .tips-body .tips-scroll {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .action_section .products .product_body .product_body_scrol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .action_section .products .product_body .product_body_scrol .top {
+    padding: 0 60px;
+  }
+  .action_section .products .product_body .product_body_scrol .top img {
+    width: 450px;
+    height: 450px;
+  }
+  .action_section .products .product_body .product_body_scrol .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .action_section .products .buttons {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0.8rem;
+  }
+  .action_section .products .buttons a {
+    border-radius: 6px;
+    height: 44px;
+    width: 45%;
+  }
+}
+
+.action_section .filters {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: #FFFFFF;
+  border-radius: 16px 16px 0px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+
+.action_section .filters.off {
+  bottom: -100%;
+}
+
+.action_section .filters .filter_top {
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+}
+
+.action_section .filters .filter_top h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #191919;
+}
+
+.action_section .filters .filter_top .filter-toggler {
+  width: 30px;
+  height: 30px;
+}
+
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span {
+  height: 2px;
+  width: 100%;
+  background-color: #A5A5A5;
+  border-radius: 10px;
+}
+
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(1px);
+          transform: rotate(45deg) translateY(1px);
+}
+
+.action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translateY(-1px);
+          transform: rotate(-45deg) translateY(-1px);
+}
+
+.action_section .filters .filter_body {
+  overflow-y: scroll;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.action_section .filters .filter_body section h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #191919;
+  opacity: 0.4;
+}
+
+.action_section .filters .filter_body section form {
+  min-height: 100%;
+}
+
+.action_section .filters .filter_body section form input {
+  display: none;
+}
+
+.action_section .filters .filter_body section form label {
+  padding: 10px 16px;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0px 4px 8px 0;
+  color: #191919;
+}
+
+.action_section .filters .filter_body section form label.checked {
+  border: none;
+  background: #FF7010;
+  color: #FFFFFF;
+}
+
+.action_section .filters .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action_section .filters .buttons a {
+  border-radius: 6px;
+  height: 44px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 45%;
+}
+
+.action_section .filters .buttons a.clean {
+  color: #FF7010;
+  border: 1px solid #FF7010;
+}
+
+.action_section .filters .buttons a.filter {
+  color: #FFFFFF;
+  background: #FF7010;
 }
 
 @media only screen and (min-width: 768px) {
-  .action_section.closed {
-    bottom: 0;
-    left: initial;
-    right: -100vw;
-  }
-  .action_section.closed img.blur_img {
-    display: none;
-  }
   .action_section .filters {
     bottom: 0;
     left: initial;

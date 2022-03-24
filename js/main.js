@@ -175,3 +175,49 @@ checkbox_label.forEach(element => {
         element.classList.toggle('checked')
     });
 });
+// product body scrols da amallar
+
+const productBodyScroll = document.getElementById('productBodyScroll');
+productBodyScroll.onscroll = function () {
+    if (productBodyScroll.scrollTop > 0) {
+        productBodyScroll.classList.add('scrolling');
+    } else {
+        productBodyScroll.classList.remove('scrolling');
+    }
+}
+
+// product da minicardlar uchun amallar
+const minicard_product = document.querySelectorAll('.minicard_product');
+minicard_product.forEach(element => {
+    element.addEventListener('click', () => {
+        let k = true;
+        element.classList.forEach(e => {
+            if (e == 'disabled') {
+                k= false;
+            }
+        });
+        if (k) {
+            element.classList.toggle('checked');
+        }
+    });
+});
+// productda tip button lar uchun  amallar
+const tip_buttons_label = document.querySelectorAll('.tip_buttons_label');
+tip_buttons_label.forEach(element => {
+    element.addEventListener('click', () => {
+        tip_buttons_label.forEach(e => {
+            e.classList.remove('clicked');
+        });
+        element.classList.add('clicked');
+    });
+});
+// tip size buttonlar uchun action amallar
+const tip_size_buttons = document.querySelectorAll('.tip_size_buttons');
+tip_size_buttons.forEach(element => {
+    element.addEventListener('click', () => {
+        tip_size_buttons.forEach(e => {
+            e.classList.remove('clicked');
+        });
+        element.classList.add('clicked');
+    });
+});
