@@ -1347,15 +1347,11 @@ footer .footer_body .copy p {
   bottom: -100vh;
 }
 
-.action_section.closed .filters {
-  bottom: -100%;
-}
-
-.action_section.closed img {
+.action_section.closed img.blur_img {
   display: none;
 }
 
-.action_section img {
+.action_section img.blur_img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1375,12 +1371,16 @@ footer .footer_body .copy p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 80vh;
   background: #FFFFFF;
   border-radius: 16px 16px 0px 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-y: scroll;
+}
+
+.action_section .filters.off {
+  bottom: -100%;
 }
 
 .action_section .filters .filter_top {
@@ -1528,6 +1528,579 @@ footer .footer_body .copy p {
   background: #FF7010;
 }
 
+.action_section .products {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: #FFFFFF;
+  border-radius: 16px 16px 0px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+
+.action_section .products.off {
+  bottom: -100%;
+}
+
+.action_section .products .product_top {
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+}
+
+.action_section .products .product_top h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #191919;
+}
+
+.action_section .products .product_top .product-toggler {
+  width: 30px;
+  height: 30px;
+}
+
+.action_section .products .product_top .product-toggler .navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.action_section .products .product_top .product-toggler .navbar-toggler-icon span {
+  height: 2px;
+  width: 100%;
+  background-color: #A5A5A5;
+  border-radius: 10px;
+}
+
+.action_section .products .product_top .product-toggler .navbar-toggler-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(1px);
+          transform: rotate(45deg) translateY(1px);
+}
+
+.action_section .products .product_top .product-toggler .navbar-toggler-icon span:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translateY(-1px);
+          transform: rotate(-45deg) translateY(-1px);
+}
+
+.action_section .products .product_body {
+  overflow-y: scroll;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.action_section .products .product_body .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.action_section .products .product_body .top img {
+  width: 260px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.action_section .products .product_body .body_section h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #191919;
+}
+
+.action_section .products .product_body .body_section h4 img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.action_section .products .product_body .body_section .tips-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 12px;
+  overflow-x: scroll;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.checked .img-top {
+  border: 1px solid #FF7010;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.checked .img-top .bi-check2-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  color: #FF7010;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.disabled h5 {
+  color: #A5A5A5;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.disabled .img-top img {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+  opacity: 0.6;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.disabled .img-top .bi-x-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  color: #A5A5A5;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard .img-top {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard .img-top img {
+  width: 32px;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard .img-top i {
+  display: none;
+}
+
+.action_section .products .product_body .body_section .tips-body .tips-scroll .minicard h5 {
+  max-width: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #191919;
+  margin-top: 8px;
+}
+
+.action_section .products .product_body .body_section .tip-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.action_section .products .product_body .body_section .tip-buttons label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+.action_section .products .product_body .body_section .tip-buttons label.clicked {
+  background: #FF7010;
+  color: #FFFFFF;
+}
+
+.action_section .products .product_body .body_section .tip-size-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.action_section .products .product_body .body_section .tip-size-buttons label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+.action_section .products .product_body .body_section .tip-size-buttons label.clicked {
+  background: #FF7010;
+  color: #FFFFFF;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #191919;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: scroll;
+  margin-top: 12px;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.checked .img-top {
+  border: 1px solid #FF7010;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.checked .img-top .bi-check2-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  color: #FF7010;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.disabled h5 {
+  color: #A5A5A5;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.disabled span {
+  color: #A5A5A5;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.disabled .img-top img {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+  opacity: 0.6;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.disabled .img-top .bi-x-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  color: #A5A5A5;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard .img-top {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard .img-top img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard .img-top i {
+  display: none;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard h5 {
+  max-width: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #191919;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard span {
+  max-width: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 6px;
+  color: #FF7010;
+}
+
+.action_section .products .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #F0F0F0;
+}
+
+.action_section .products .buttons .jami h5 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FF7010;
+}
+
+.action_section .products .buttons .jami p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #A5A5A5;
+}
+
+.action_section .products .buttons a {
+  border-radius: 6px;
+  height: 44px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 45%;
+}
+
+.action_section .products .buttons a.clean {
+  color: #FF7010;
+  border: 1px solid #FF7010;
+}
+
+.action_section .products .buttons a.filter {
+  color: #FFFFFF;
+  background: #FF7010;
+}
+
 .blur_back {
   -webkit-filter: blur(10px);
           filter: blur(10px);
@@ -1539,12 +2112,7 @@ footer .footer_body .copy p {
     left: initial;
     right: -100vw;
   }
-  .action_section.closed .filters {
-    bottom: 0;
-    left: initial;
-    right: -100%;
-  }
-  .action_section.closed img {
+  .action_section.closed img.blur_img {
     display: none;
   }
   .action_section .filters {
@@ -1558,6 +2126,11 @@ footer .footer_body .copy p {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     overflow-y: scroll;
+  }
+  .action_section .filters.off {
+    bottom: 0;
+    left: initial;
+    right: -100%;
   }
   .action_section .filters .filter_top {
     border-bottom: 1px solid #F0F0F0;
@@ -1720,5 +2293,12 @@ main .mini_action a::before {
 
 *::-webkit-scrollbar {
   display: none;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

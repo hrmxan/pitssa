@@ -20,7 +20,7 @@
 
   <div id="actionsSection" class="action_section closed">
     <img class="blur_img" src="./img/blur.png">
-    <div class="filters">
+    <div id="filterBody" class="filters off">
       <div class="filter_top py-2 container d-flex flex-row justify-content-between align-items-center">
         <h4 class="m-0">Filterlar</h4>
         <a class="filter-toggler" id="filterButton" type="button" data-toggle="collapse">
@@ -106,6 +106,150 @@
         <a class="filter" href="#">Saralash</a>
       </div>
     </div>
+    <div id="productBody" class="products off">
+      <div class="product_top py-2 container d-flex flex-row justify-content-between align-items-center">
+        <h4 class="m-0">Mahsulotlar</h4>
+        <a class="product-toggler" id="productButton" type="button" data-toggle="collapse">
+          <span class="navbar-toggler-icon">
+            <span class="toggle_button_iteam"></span>
+            <span class="toggle_button_iteam"></span>
+          </span>
+        </a>
+      </div>
+
+      <div id="productBody" class="product_body pt-2">
+        <div class="container product_body_scrol">
+          <section class="top pb-3">
+            <img src="./img/pissa_card.png" alt="pepereno">
+          </section>
+          <section class="mb-3 body_section">
+            <h4>
+              <img src="./img/aksiya.png">
+              Mahsus uslubidagi pepperoni
+            </h4>
+            <div class="tips-body">
+              <form class="tips-scroll">
+                <label for="tipsTip1" class="minicard ">
+                  <div class="img-top">
+                    <img src="./img/motsatella.png" alt="motsarella">
+                    <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                  </div>
+                  <h5>Motsarella</h5>
+                </label>
+                <input type="checkbox" class="d-none" id="tipsTip1">
+                <label for="tipsTip2" class="minicard disabled">
+                  <div class="img-top">
+                    <img src="./img/bodiringli.png" alt="motsarella">
+                    <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                  </div>
+                  <h5>Bodiringli va tuzlamali</h5>
+                </label>
+                <input type="checkbox" class="d-none" id="tipsTip2">
+                <label for="tipsTip3" class="minicard checked">
+                  <div class="img-top">
+                    <img src="./img/pepereni.png" alt="motsarella">
+                    <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                  </div>
+                  <h5>Pepperoni</h5>
+                </label>
+                <input type="checkbox" class="d-none" id="tipsTip3">
+                <label for="tipsTip4" class="minicard ">
+                  <div class="img-top">
+                    <img src="./img/tomato.png" alt="motsarella">
+                    <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                  </div>
+                  <h5>Tomato</h5>
+                </label>
+                <input type="checkbox" class="d-none" id="tipsTip4">
+              </form>
+            </div>
+            <form class="tip-buttons">
+              <input class="d-none" name="tips" type="radio" id="tip1">
+              <label for="tip1" class="clicked">
+                Ananaviy
+              </label>
+              <input class="d-none" name="tips" type="radio" id="tip2">
+              <label for="tip2">
+                Yupqa
+              </label>
+            </form>
+            <form class="tip-size-buttons">
+              <input class="d-none" name="tips" type="radio" id="tip1">
+              <label for="tip1" class="clicked">
+                20 sm
+              </label>
+              <input class="d-none" name="tips" type="radio" id="tip2">
+              <label for="tip2">
+                28 sm
+              </label>
+              <input class="d-none" name="tips" type="radio" id="tip3">
+              <label for="tip3">
+                33 sm
+              </label>
+            </form>
+            <div class="qoshimcha-body">
+              <h4 >Pitssaga qo'shish</h4>
+              <div class="qoshimcha-scroll-body">
+                <form class="qoshimcha-scroll">
+                  <label for="tipsTip1" class="minicard checked">
+                    <div class="img-top">
+                      <img src="./img/motsatella.png" alt="motsarella">
+                      <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                    </div>
+                    <h5>Motsarella</h5>
+                    <span> 5 000 so'm</span>
+                  </label>
+                  <input type="checkbox" class="d-none" id="tipsTip1">
+                  <label for="tipsTip2" class="minicard">
+                    <div class="img-top">
+                      <img src="./img/shampion.png" alt="motsarella">
+                      <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                    </div>
+                    <h5>Shampinion</h5>
+                    <span> 2 000 so'm</span>
+                  </label>
+                  <input type="checkbox" class="d-none" id="tipsTip2">
+                  <label for="tipsTip3" class="minicard">
+                    <div class="img-top">
+                      <img src="./img/piyoz.png" alt="motsarella">
+                      <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                    </div>
+                    <h5>Qizil piyoz</h5>
+                    <span> 3 000 so'm</span>
+                  </label>
+                  <input type="checkbox" class="d-none" id="tipsTip3">
+                  <label for="tipsTip4" class="minicard ">
+                    <div class="img-top">
+                      <img src="./img/qovoq.png" alt="motsarella">
+                      <i class="bi bi-check2-circle"></i>
+                      <i class="bi bi-x-circle"></i>
+                    </div>
+                    <h5>Qovoqli</h5>
+                    <span> 1 000 so'm</span>
+                  </label>
+                  <input type="checkbox" class="d-none" id="tipsTip4">
+                </form>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+      <div class="buttons container py-3">
+        <div class="jami">
+          <h5 class="p-0 m-0">Jami: <span>65 000</span> so'm</h5>
+          <p class="p-0 m-0">400 g</p>
+        </div>
+        <a class="filter" href="#">Korzinkaga</a>
+      </div>
+    </div>
   </div>
 
 
@@ -114,7 +258,7 @@
 
 
   <header id="header">
-    
+
 
     <div id="locTopNav" class="location">
       <div class="container d-flex flex-row align-items-center justify-content-between py-2">
@@ -251,7 +395,7 @@
   <main class="pb-5 position-relative" id="main">
     <div id="miniActions" class="container py-0 bg-black mini_action">
       <div class="p-0 m-0 position-relative">
-        <a  type="submit">
+        <a type="submit">
           <img src="./img/korzin_i.png">
         </a>
       </div>
@@ -401,7 +545,7 @@
         </div>
         <div class="container">
           <div class="body pt-3 row justify-content-between">
-            <div
+            <div id="pitssaCard1"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0 new">
               <div class="card_img_body">
                 <img src="./img/pissa_card.png">
@@ -426,7 +570,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard2"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0 xit">
               <div class="card_img_body">
                 <img src="./img/pissa_card2.png">
@@ -451,7 +595,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard3"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0">
               <div class="card_img_body">
                 <img src="./img/pissa_card3.png">
@@ -476,7 +620,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard4"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0">
               <div class="card_img_body">
                 <img src="./img/pissa_card4.png">
@@ -501,7 +645,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard5"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0">
               <div class="card_img_body">
                 <img src="./img/pissa_card5.png">
@@ -526,7 +670,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard6"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0">
               <div class="card_img_body">
                 <img src="./img/pissa_card6.png">
@@ -551,7 +695,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard7"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0">
               <div class="card_img_body">
                 <img src="./img/pissa_card7.png">
@@ -576,7 +720,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <div id="pitssaCard8"
               class="card position-relative d-flex flex-row flex-sm-column align-items-center mb-2 mb-sm-4 col-sm-6 col-lg-3 py-2 p-sm-0">
               <div class="card_img_body">
                 <img src="./img/pissa_card8.png">
