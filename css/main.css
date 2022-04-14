@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
 header {
   border-bottom: 1px solid #F0F0F0;
   border-top: 1px solid #F0F0F0;
@@ -38,7 +43,7 @@ header .location .left .locate select {
   background-color: transparent;
   border: none;
   color: #000000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -56,7 +61,7 @@ header .location .left .locate select option[selected] {
 
 header .location .left p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -67,7 +72,7 @@ header .location .left p {
 header .location .left a {
   margin: 0;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -76,7 +81,7 @@ header .location .left a {
 }
 
 header .location .right a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -93,7 +98,7 @@ header .location .right a img {
 
 header .location .right p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -150,7 +155,7 @@ header nav .right .korzin {
   border-radius: 4px;
   margin-right: 1rem;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -230,7 +235,7 @@ header nav .collapse-bar {
 }
 
 header nav .collapse-bar .navbar_nav .nav-item a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -253,7 +258,7 @@ header nav .collapse-bar .navbar_nav .nav-item.login img {
 }
 
 header nav .collapse-bar .navbar_nav .time_end {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -268,7 +273,7 @@ header nav .collapse-bar .navbar_nav .nav-item.section_nav {
 }
 
 header nav .collapse-bar .navbar_nav .nav-item.section_nav ul li a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -278,7 +283,7 @@ header nav .collapse-bar .navbar_nav .nav-item.section_nav ul li a {
 }
 
 header nav .collapse-bar .navbar_nav .nav-item.section_nav ul li a h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -384,7 +389,7 @@ main .tips_nav .tips_body .mini_card img {
 }
 
 main .tips_nav .tips_body .mini_card strong {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -452,7 +457,7 @@ main .tips_content .tips_content_body .tips_card {
 }
 
 main .tips_content .tips_content_body .tips_card h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -468,7 +473,7 @@ main .check_loc .body {
 }
 
 main .check_loc .body label.context {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -479,7 +484,7 @@ main .check_loc .body label.context {
 }
 
 main .check_loc .body h4.check {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -503,7 +508,7 @@ main .check_loc .body div.send {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -520,7 +525,7 @@ main .check_loc .body div.send input {
       -ms-flex-positive: 2;
           flex-grow: 2;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -529,7 +534,7 @@ main .check_loc .body div.send input {
 
 main .check_loc .body div.send input::-webkit-input-placeholder {
   color: #A5A5A5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -538,7 +543,7 @@ main .check_loc .body div.send input::-webkit-input-placeholder {
 
 main .check_loc .body div.send input:-ms-input-placeholder {
   color: #A5A5A5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -547,7 +552,7 @@ main .check_loc .body div.send input:-ms-input-placeholder {
 
 main .check_loc .body div.send input::-ms-input-placeholder {
   color: #A5A5A5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -556,7 +561,7 @@ main .check_loc .body div.send input::-ms-input-placeholder {
 
 main .check_loc .body div.send input::placeholder {
   color: #A5A5A5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -608,7 +613,7 @@ main .check_loc .body a.send_button {
       -ms-flex-pack: center;
           justify-content: center;
   height: 44px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -658,7 +663,7 @@ main .check_loc .body a.send_button img {
         justify-content: space-around;
   }
   main .tips_nav.top_sticky .tips_body .mini_card strong {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -688,7 +693,7 @@ main .check_loc .body a.send_button img {
             justify-content: center;
   }
   main .tips_nav .tips_body .mini_card strong {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -723,7 +728,7 @@ main .check_loc .body a.send_button img {
     padding: 20px;
   }
   main .tips_content .tips_content_body .tips_card h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -738,7 +743,7 @@ main .zakuski .top h1,
 main .desert .top h1,
 main .ichimliklar .top h1,
 main .sous .top h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -760,7 +765,7 @@ main .sous .top a {
   text-decoration: none;
   height: 32px;
   padding: 0 15px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -825,7 +830,7 @@ main .sous .body .card.new::before {
   top: 10px;
   left: 0;
   z-index: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -857,7 +862,7 @@ main .sous .body .card.xit::before {
   top: 10px;
   left: 0;
   z-index: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -909,7 +914,7 @@ main .sous .body .card .card_img_body.kombo::before {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
@@ -923,7 +928,7 @@ main .zakuski .body .card .card_body h4,
 main .desert .body .card .card_body h4,
 main .ichimliklar .body .card .card_body h4,
 main .sous .body .card .card_body h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -938,7 +943,7 @@ main .zakuski .body .card .card_body p,
 main .desert .body .card .card_body p,
 main .ichimliklar .body .card .card_body p,
 main .sous .body .card .card_body p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -992,7 +997,7 @@ main .sous .body .card .card_body .prise a.button_select {
   padding: 13px 32px;
   background: #FF7010;
   border-radius: 6px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1006,7 +1011,7 @@ main .zakuski .body .card .card_body .prise span,
 main .desert .body .card .card_body .prise span,
 main .ichimliklar .body .card .card_body .prise span,
 main .sous .body .card .card_body .prise span {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1069,7 +1074,7 @@ main .sous .body .card .card_body .prise span {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 1;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -1082,7 +1087,7 @@ main .sous .body .card .card_body .prise span {
   main .desert .body .card .card_body h4,
   main .ichimliklar .body .card .card_body h4,
   main .sous .body .card .card_body h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -1096,7 +1101,7 @@ main .sous .body .card .card_body .prise span {
   main .desert .body .card .card_body p,
   main .ichimliklar .body .card .card_body p,
   main .sous .body .card .card_body p {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1148,7 +1153,7 @@ main .sous .body .card .card_body .prise span {
     padding: 13px 32px;
     background: #FF7010;
     border-radius: 6px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1161,7 +1166,7 @@ main .sous .body .card .card_body .prise span {
   main .desert .body .card .card_body .prise span,
   main .ichimliklar .body .card .card_body .prise span,
   main .sous .body .card .card_body .prise span {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1213,7 +1218,7 @@ main .dostavka .dostavka_body {
 }
 
 main .dostavka .dostavka_body h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1222,7 +1227,7 @@ main .dostavka .dostavka_body h4 {
 }
 
 main .dostavka .dostavka_body p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1248,7 +1253,7 @@ main .dostavka .dostavka_body .blur .buttons {
 
 main .dostavka .dostavka_body .blur .buttons a {
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1270,7 +1275,7 @@ footer {
 }
 
 footer .footer_body .logo strong {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -1285,7 +1290,7 @@ footer .footer_body .logo img {
 }
 
 footer .footer_body .section_nav ul li a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1295,7 +1300,7 @@ footer .footer_body .section_nav ul li a {
 }
 
 footer .footer_body .section_nav ul li a h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1327,7 +1332,7 @@ footer .footer_body .copy {
 }
 
 footer .footer_body .copy p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1396,7 +1401,7 @@ footer .footer_body .copy p {
     background-color: #FFFFFF;
   }
   .action_section .filters .filter_top h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -1410,7 +1415,7 @@ footer .footer_body .copy p {
             flex-grow: 1;
   }
   .action_section .filters .filter_body section h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1431,7 +1436,7 @@ footer .footer_body .copy p {
     border-radius: 6px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1462,7 +1467,7 @@ footer .footer_body .copy p {
   .action_section .filters .buttons a {
     border-radius: 6px;
     height: 44px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1519,7 +1524,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_top h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -1608,7 +1613,7 @@ footer .footer_body .copy p {
   top: 10px;
   left: 0;
   z-index: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1635,7 +1640,7 @@ footer .footer_body .copy p {
   top: 10px;
   left: 0;
   z-index: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1653,7 +1658,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1799,7 +1804,7 @@ footer .footer_body .copy p {
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard h5 {
   max-width: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1908,7 +1913,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -2047,7 +2052,7 @@ footer .footer_body .copy p {
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard h5 {
   max-width: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -2063,7 +2068,7 @@ footer .footer_body .copy p {
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard span {
   max-width: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -2090,7 +2095,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .buttons .jami h5 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -2099,7 +2104,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .buttons .jami p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2110,7 +2115,7 @@ footer .footer_body .copy p {
 .action_section .products .buttons a {
   border-radius: 6px;
   height: 44px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2151,11 +2156,13 @@ footer .footer_body .copy p {
     overflow-y: scroll;
   }
   .action_section .products.off {
-    bottom: -100%;
+    left: initial;
+    right: -100%;
+    bottom: 0;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .action_section .products {
     overflow-y: scroll;
     width: 1070px;
@@ -2245,7 +2252,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .filters .filter_top h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -2298,7 +2305,7 @@ footer .footer_body .copy p {
 }
 
 .action_section .filters .filter_body section h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2322,7 +2329,7 @@ footer .footer_body .copy p {
   border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -2356,7 +2363,7 @@ footer .footer_body .copy p {
 .action_section .filters .buttons a {
   border-radius: 6px;
   height: 44px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2407,7 +2414,7 @@ footer .footer_body .copy p {
     background-color: #FFFFFF;
   }
   .action_section .filters .filter_top h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -2421,7 +2428,7 @@ footer .footer_body .copy p {
             flex-grow: 1;
   }
   .action_section .filters .filter_body section h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2442,7 +2449,7 @@ footer .footer_body .copy p {
     border-radius: 6px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2473,7 +2480,7 @@ footer .footer_body .copy p {
   .action_section .filters .buttons a {
     border-radius: 6px;
     height: 44px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2554,11 +2561,377 @@ main .mini_action a::before {
   top: -1px;
   right: -1px;
   border: 1px solid #FF7010;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+
+.action_section .korzinka {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background: #FFFFFF;
+  border-radius: 16px 16px 0px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+
+.action_section .korzinka.off {
+  bottom: -100%;
+}
+
+.action_section .korzinka .korzinka_top {
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+}
+
+.action_section .korzinka .korzinka_top h4 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #191919;
+}
+
+.action_section .korzinka .korzinka_top .korzinka-toggler {
+  width: 30px;
+  height: 30px;
+}
+
+.action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon span {
+  height: 2px;
+  width: 100%;
+  background-color: #A5A5A5;
+  border-radius: 10px;
+}
+
+.action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(1px);
+          transform: rotate(45deg) translateY(1px);
+}
+
+.action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon span:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translateY(-1px);
+          transform: rotate(-45deg) translateY(-1px);
+}
+
+.action_section .korzinka .korzinka_body {
+  overflow-y: scroll;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card img {
+  width: 84px;
+  height: 84px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 12px;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body h4 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #191919;
+  margin-bottom: 8px;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body p {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #191919;
+  margin-bottom: 10px;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFEEE2;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .counter span {
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7010;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .counter button {
+  padding: 0 5px;
+  outline: none;
+  border: 0;
+  min-width: 25px;
+  background-color: transparent;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7010;
+}
+
+.action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #FF7010;
+}
+
+.action_section .korzinka .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #F0F0F0;
+}
+
+.action_section .korzinka .buttons .jami h5 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FF7010;
+}
+
+.action_section .korzinka .buttons .jami p {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #A5A5A5;
+}
+
+.action_section .korzinka .buttons a {
+  border-radius: 6px;
+  height: 44px;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 45%;
+}
+
+.action_section .korzinka .buttons a.clean {
+  color: #FF7010;
+  border: 1px solid #FF7010;
+}
+
+.action_section .korzinka .buttons a.filter {
+  color: #FFFFFF;
+  background: #FF7010;
+}
+
+@media only screen and (min-width: 768px) {
+  .action_section .korzinka {
+    bottom: 0;
+    left: initial;
+    right: 0;
+    width: 460px;
+    height: 100%;
+    border-radius: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-y: scroll;
+  }
+  .action_section .korzinka.off {
+    left: initial;
+    right: -100%;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .action_section .korzinka {
+    overflow-y: scroll;
+    width: 1070px;
+    height: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 16px;
+  }
+  .action_section .korzinka.off {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .action_section .korzinka .product_body .tips-body .tips-scroll {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .action_section .korzinka .product_body .product_body_scrol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .action_section .korzinka .product_body .product_body_scrol .top {
+    padding: 0 60px;
+  }
+  .action_section .korzinka .product_body .product_body_scrol .top img {
+    width: 450px;
+    height: 450px;
+  }
+  .action_section .korzinka .product_body .product_body_scrol .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .action_section .korzinka .buttons {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0.8rem;
+  }
+  .action_section .korzinka .buttons a {
+    border-radius: 6px;
+    height: 44px;
+    width: 45%;
+  }
 }
 
 *::-webkit-scrollbar {

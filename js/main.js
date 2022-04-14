@@ -68,38 +68,11 @@ window.onscroll = function () {
     scrollTop = scroll;
 }
 
-
-const filterButton = document.getElementById('filterButton');
+// action oyna
 const actionsSection = document.getElementById('actionsSection');
 const header = document.getElementById('header');
 const main = document.getElementById('main');
 const footer = document.getElementById('footer');
-const filterBody = document.getElementById('filterBody');
-const productBody = document.getElementById('productBody');
-const productButton = document.getElementById('productButton');
-
-// filter tugmalari
-
-const filter1 = document.getElementById('filter1');
-const filter2 = document.getElementById('filter2');
-const filter3 = document.getElementById('filter3');
-const filter4 = document.getElementById('filter4');
-const filter5 = document.getElementById('filter5');
-const filter6 = document.getElementById('filter6');
-const filter7 = document.getElementById('filter7');
-
-// product tugmalar
-const product1 = document.getElementById('pitssaCard1');
-const product2 = document.getElementById('pitssaCard2');
-const product3 = document.getElementById('pitssaCard3');
-const product4 = document.getElementById('pitssaCard4');
-const product5 = document.getElementById('pitssaCard5');
-const product6 = document.getElementById('pitssaCard6');
-const product7 = document.getElementById('pitssaCard7');
-const product8 = document.getElementById('pitssaCard8');
-
-// action  va uning oynalari
-
 const actionOn = () => {
     actionsSection.classList.remove('closed');
     header.classList.add('blur_back');
@@ -112,17 +85,26 @@ const actionOff = () => {
     main.classList.remove('blur_back');
     footer.classList.remove('blur_back');
 }
+
+
+// Filter actions
+
+const filterButton = document.getElementById('filterButton');
+const filterBody = document.getElementById('filterBody');
+
+const filter1 = document.getElementById('filter1');
+const filter2 = document.getElementById('filter2');
+const filter3 = document.getElementById('filter3');
+const filter4 = document.getElementById('filter4');
+const filter5 = document.getElementById('filter5');
+const filter6 = document.getElementById('filter6');
+const filter7 = document.getElementById('filter7');
+
 const filterOn = () => {
     filterBody.classList.remove('off');
 }
 const filterOff = () => {
     filterBody.classList.add('off');
-}
-const productOn = () => {
-    productBody.classList.remove('off');
-}
-const productOff = () => {
-    productBody.classList.add('off');
 }
 
 const filterOnToggle = () => {
@@ -133,6 +115,46 @@ const filterOffToggle = () => {
     actionOff();
     filterOff();
 }
+
+filterButton.addEventListener('click', filterOffToggle);
+
+filter1.addEventListener('click', filterOnToggle);
+filter2.addEventListener('click', filterOnToggle);
+filter3.addEventListener('click', filterOnToggle);
+filter4.addEventListener('click', filterOnToggle);
+filter5.addEventListener('click', filterOnToggle);
+filter6.addEventListener('click', filterOnToggle);
+filter7.addEventListener('click', filterOnToggle);
+    // checkbox filter buttonlaarini o'chirib yoqish
+const checkbox_label = document.querySelectorAll('.checkbox_label');
+checkbox_label.forEach(element => {
+    element.addEventListener('click', () => {
+        element.classList.toggle('checked')
+    });
+});
+
+
+// product actions
+
+const productBody = document.getElementById('productBody');
+const productButton = document.getElementById('productButton');
+
+const product1 = document.getElementById('pitssaCard1');
+const product2 = document.getElementById('pitssaCard2');
+const product3 = document.getElementById('pitssaCard3');
+const product4 = document.getElementById('pitssaCard4');
+const product5 = document.getElementById('pitssaCard5');
+const product6 = document.getElementById('pitssaCard6');
+const product7 = document.getElementById('pitssaCard7');
+const product8 = document.getElementById('pitssaCard8');
+const productBodyScroll = document.getElementById('productBodyScroll');
+
+const productOn = () => {
+    productBody.classList.remove('off');
+}
+const productOff = () => {
+    productBody.classList.add('off');
+}
 const productOnToggle = () => {
     actionOn();
     productOn();
@@ -142,21 +164,6 @@ const productOffToggle = () => {
     productOff();
 }
 
-// action oynalari uchun amallar
-
-    // krestik tugmalar
-filterButton.addEventListener('click', filterOffToggle);
-productButton.addEventListener('click', productOffToggle);
- // actions uchun tugmalar
-    // filter tugmalar
-filter1.addEventListener('click', filterOnToggle);
-filter2.addEventListener('click', filterOnToggle);
-filter3.addEventListener('click', filterOnToggle);
-filter4.addEventListener('click', filterOnToggle);
-filter5.addEventListener('click', filterOnToggle);
-filter6.addEventListener('click', filterOnToggle);
-filter7.addEventListener('click', filterOnToggle);
-    // product tugmalar
 product1.addEventListener('click', productOnToggle);
 product2.addEventListener('click', productOnToggle);
 product3.addEventListener('click', productOnToggle);
@@ -166,18 +173,9 @@ product6.addEventListener('click', productOnToggle);
 product7.addEventListener('click', productOnToggle);
 product8.addEventListener('click', productOnToggle);
 
+productButton.addEventListener('click', productOffToggle);
 
-// checkbox filter buttonlaarini o'chirib yoqish
-
-const checkbox_label = document.querySelectorAll('.checkbox_label');
-checkbox_label.forEach(element => {
-    element.addEventListener('click', () => {
-        element.classList.toggle('checked')
-    });
-});
 // product body scrols da amallar
-
-const productBodyScroll = document.getElementById('productBodyScroll');
 productBodyScroll.onscroll = function () {
     if (productBodyScroll.scrollTop > 0) {
         productBodyScroll.classList.add('scrolling');
@@ -185,8 +183,17 @@ productBodyScroll.onscroll = function () {
         productBodyScroll.classList.remove('scrolling');
     }
 }
-
-// product da minicardlar uchun amallar
+// productda tip button lar uchun  amallar
+const tip_buttons_label = document.querySelectorAll('.tip_buttons_label');
+tip_buttons_label.forEach(element => {
+    element.addEventListener('click', () => {
+        tip_buttons_label.forEach(e => {
+            e.classList.remove('clicked');
+        });
+        element.classList.add('clicked');
+    });
+});
+    // product da minicardlar uchun amallar
 const minicard_product = document.querySelectorAll('.minicard_product');
 minicard_product.forEach(element => {
     element.addEventListener('click', () => {
@@ -201,17 +208,7 @@ minicard_product.forEach(element => {
         }
     });
 });
-// productda tip button lar uchun  amallar
-const tip_buttons_label = document.querySelectorAll('.tip_buttons_label');
-tip_buttons_label.forEach(element => {
-    element.addEventListener('click', () => {
-        tip_buttons_label.forEach(e => {
-            e.classList.remove('clicked');
-        });
-        element.classList.add('clicked');
-    });
-});
-// tip size buttonlar uchun action amallar
+    // tip size buttonlar uchun action amallar
 const tip_size_buttons = document.querySelectorAll('.tip_size_buttons');
 tip_size_buttons.forEach(element => {
     element.addEventListener('click', () => {
@@ -221,3 +218,31 @@ tip_size_buttons.forEach(element => {
         element.classList.add('clicked');
     });
 });
+
+
+// Korzinka actions
+
+const korzinkaBody = document.getElementById('korzinkaBody');
+const korzinkaButton = document.getElementById('korzinkaButton');
+const korzinkaIn = document.getElementById('korzinkaIn');
+const korzinkaInFixed = document.getElementById('korzinkaInFixed');
+
+const korzinkaOn = () => {
+    korzinkaBody.classList.remove('off');
+}
+const korzinkaOff = () => {
+    korzinkaBody.classList.add('off');
+}
+const korzinkaOnToggle = () => {
+    actionOn();
+    korzinkaOn();
+}
+const korzinkaOffToggle = () => {
+    actionOff();
+    korzinkaOff();
+}
+korzinkaIn.addEventListener('click', korzinkaOnToggle);
+korzinkaInFixed.addEventListener('click', korzinkaOnToggle);
+korzinkaButton.addEventListener('click', korzinkaOffToggle);
+
+
