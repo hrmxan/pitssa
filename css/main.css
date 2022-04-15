@@ -13,6 +13,8 @@ header.fixed {
   background-color: #ffffff;
   width: 100%;
   z-index: 100;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 header.fixed .location {

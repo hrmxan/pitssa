@@ -3,11 +3,25 @@ const navbarButton = document.getElementById('navbarButton');
 const navbarNav = document.getElementById('navbarNav');
 const accauntTopNav = document.getElementById('accauntTopNav');
 const tooglerButton = document.getElementById('tooglerButton');
+var fixedTogler = false;
+var fixedCount = 0;
 
 navbarButton.addEventListener('click', () => {
     navbarNav.classList.toggle('colapse-nav');
     accauntTopNav.classList.toggle('d-none');
     tooglerButton.classList.toggle('click');
+    navbarNav.classList.forEach(
+        (item) => {
+            if (item == 'colapse-nav') {
+                fixedCount++;
+            }
+        }
+    )
+    if (fixedCount >= 1) {
+        fixedTogler = true;
+    } else {
+        fixedTogler = false;
+    }
 });
 
 // footer uchun toogle, dastavka batafsil
@@ -38,7 +52,7 @@ window.onscroll = function () {
     if (window.pageYOffset > 104) {
         header.classList.add('fixed');
         miniActions.classList.remove('d-none');
-        if (window.pageYOffset > tipNavCont.offsetHeight + 104) {
+        if (window.pageYOffset > tipNavCont.offsetHeight + 104 && fixedTogler == false) {
             scroll = window.pageYOffset;
             tipNavContMask.classList.remove('d-none');
             tipNavContMask.offsetHeight = tipNavCont.offsetHeight;
