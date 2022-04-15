@@ -10,6 +10,7 @@ navbarButton.addEventListener('click', () => {
     navbarNav.classList.toggle('colapse-nav');
     accauntTopNav.classList.toggle('d-none');
     tooglerButton.classList.toggle('click');
+    fixedCount = 0;
     navbarNav.classList.forEach(
         (item) => {
             if (item == 'colapse-nav') {
