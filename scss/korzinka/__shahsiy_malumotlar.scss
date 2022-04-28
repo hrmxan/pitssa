@@ -1,0 +1,18 @@
+.shahsiy__malumotlar {
+  .body {
+    border-bottom: 1px solid #F0F0F0;
+  }
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  label {
+    @include my-label;
+    margin-bottom: 8px;
+  }
+
+  input {
+    @include my-input;
+    margin-bottom: 16px;
+  }
+}

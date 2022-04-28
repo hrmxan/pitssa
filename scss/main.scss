@@ -1,4 +1,5 @@
 @import "./_fonts_famely";
+@import "./_boxing";
 @import "./_header";
 @import "./main/_tips";
 @import "./main/_body_sections";
@@ -9,6 +10,10 @@
 @import "./actions/_filters";
 @import "./actions/_mini_actions";
 @import "./actions/_korzinka";
+@import "./korzinka/_cards";
+@import "./korzinka/_adds";
+@import "./korzinka/_shahsiy_malumotlar";
+@import "./korzinka/_manzil";
 *::-webkit-scrollbar {
     display: none;
 }

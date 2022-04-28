@@ -3,6 +3,17 @@
   src: url("../fonts/Inter-Regular.ttf");
 }
 
+.container-hrm {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .container-hrm {
+    width: 850px;
+  }
+}
+
 header {
   border-bottom: 1px solid #F0F0F0;
   border-top: 1px solid #F0F0F0;
@@ -31,7 +42,6 @@ header .location {
   height: 44px;
   background-color: white;
   border-bottom: 1px solid #F0F0F0;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -123,35 +133,17 @@ header nav .navbar-brand img {
 }
 
 header nav .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 header nav .right .korzin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   padding: 8px 16px;
   background: #FF7010;
   border-radius: 4px;
@@ -174,64 +166,46 @@ header nav .right .korzin img {
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon .toggle_button_iteam {
   width: 100%;
   height: 1px;
   background-color: #000000;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon .toggle_button_iteam:nth-child(3) {
   width: 70%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon.click {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon.click .toggle_button_iteam:nth-child(1) {
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
-  -webkit-transition: 0.5s;
+  transform: rotate(225deg);
   transition: 0.5s;
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon.click .toggle_button_iteam:nth-child(2) {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  -webkit-transition: 0.5s;
+  transform: rotate(135deg);
   transition: 0.5s;
 }
 
 header nav .right .navbar-toggler .navbar-toggler-icon.click .toggle_button_iteam:nth-child(3) {
   width: 0;
-  -webkit-transition: 0s;
   transition: 0s;
 }
 
 header nav .collapse-bar {
   height: 0;
   overflow: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 0.5rem;
 }
@@ -338,7 +312,6 @@ main {
 
 main .tip-nav-con {
   background-color: #FFFFFF;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -347,13 +320,8 @@ main .tip-nav-con {
 }
 
 main .tips_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 main .tips_nav::-webkit-scrollbar {
@@ -365,16 +333,9 @@ main .tips_nav.top_sticky .tips_body .mini_card {
 }
 
 main .tips_nav .tips_body {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 2;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   overflow-y: scroll;
 }
 
@@ -400,18 +361,10 @@ main .tips_nav .tips_body .mini_card strong {
 }
 
 main .tips_nav .tips_body .mini_card a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 main .tips_nav .tips_body .mini_card.active strong {
@@ -419,13 +372,8 @@ main .tips_nav .tips_body .mini_card.active strong {
 }
 
 main .tips_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   overflow-x: scroll;
 }
 
@@ -434,22 +382,13 @@ main .tips_content::-webkit-scrollbar {
 }
 
 main .tips_content .tips_content_body {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 main .tips_content .tips_content_body .tips_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 280px;
   height: 320px;
   background: #C4C4C4;
@@ -495,20 +434,13 @@ main .check_loc .body h4.check {
 }
 
 main .check_loc .body div.send {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   position: relative;
   width: 100%;
   min-height: 44px;
   border-radius: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -523,37 +455,8 @@ main .check_loc .body div.send {
 main .check_loc .body div.send input {
   border: 0;
   outline: none;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-grow: 2;
   height: 100%;
-  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-main .check_loc .body div.send input::-webkit-input-placeholder {
-  color: #A5A5A5;
-  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-main .check_loc .body div.send input:-ms-input-placeholder {
-  color: #A5A5A5;
-  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-main .check_loc .body div.send input::-ms-input-placeholder {
-  color: #A5A5A5;
   font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -582,15 +485,9 @@ main .check_loc .body div.send span.send {
   width: 44px;
   height: 44px;
   border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 0;
 }
@@ -601,19 +498,10 @@ main .check_loc .body div.send span.send img {
 }
 
 main .check_loc .body a.send_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 44px;
   font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -654,15 +542,9 @@ main .check_loc .body a.send_button img {
     height: 24px;
   }
   main .tips_nav.top_sticky .tips_body .mini_card a {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
   main .tips_nav.top_sticky .tips_body .mini_card strong {
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -683,16 +565,9 @@ main .check_loc .body a.send_button img {
     height: 32px;
   }
   main .tips_nav .tips_body .mini_card a {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   main .tips_nav .tips_body .mini_card strong {
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -712,16 +587,9 @@ main .check_loc .body a.send_button img {
     display: none;
   }
   main .tips_content .tips_content_body .tips_card {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 280px;
     height: 320px;
     background: #C4C4C4;
@@ -761,8 +629,7 @@ main .ichimliklar .top a,
 main .sous .top a {
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 6px;
   text-decoration: none;
   height: 32px;
@@ -772,12 +639,8 @@ main .sous .top a {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   /* Black */
   color: #191919;
@@ -802,8 +665,7 @@ main .ichimliklar .body .card,
 main .sous .body .card {
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -818,15 +680,9 @@ main .sous .body .card.new::before {
   width: 44px;
   height: 22px;
   border-radius: 0 6px 6px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #E23535;
   position: absolute;
   top: 10px;
@@ -850,15 +706,9 @@ main .sous .body .card.xit::before {
   width: 44px;
   height: 22px;
   border-radius: 0 6px 6px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #E23535;
   position: absolute;
   top: 10px;
@@ -880,8 +730,7 @@ main .ichimliklar .body .card .card_img_body img,
 main .sous .body .card .card_img_body img {
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -895,26 +744,15 @@ main .sous .body .card .card_img_body.kombo::before {
   width: 60px;
   padding: 2px 5px;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8e3dee), to(#57349f));
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to bottom, #8e3dee, #57349f);
   position: absolute;
   top: 5%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
   font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -961,12 +799,8 @@ main .desert .body .card .card_body .prise a.prise_sum,
 main .ichimliklar .body .card .card_body .prise a.prise_sum,
 main .sous .body .card .card_body .prise a.prise_sum {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 7px 16px;
   height: 32px;
   background: #FFEEE2;
@@ -983,19 +817,10 @@ main .desert .body .card .card_body .prise a.button_select,
 main .ichimliklar .body .card .card_body .prise a.button_select,
 main .sous .body .card .card_body .prise a.button_select {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 13px 32px;
   background: #FF7010;
   border-radius: 6px;
@@ -1018,12 +843,9 @@ main .sous .body .card .card_body .prise span {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #A5A5A5;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 
 @media only screen and (min-width: 576px) {
@@ -1055,26 +877,15 @@ main .sous .body .card .card_body .prise span {
     width: initial;
     padding: 5px 10px;
     border-radius: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#8e3dee), to(#57349f));
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(to bottom, #8e3dee, #57349f);
     position: absolute;
     top: 5%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     z-index: 1;
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
@@ -1118,12 +929,8 @@ main .sous .body .card .card_body .prise span {
   main .ichimliklar .body .card .card_body .prise a.prise_sum,
   main .sous .body .card .card_body .prise a.prise_sum {
     text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 7px 16px;
     height: 32px;
     background: #FFEEE2;
@@ -1139,19 +946,10 @@ main .sous .body .card .card_body .prise span {
   main .ichimliklar .body .card .card_body .prise a.button_select,
   main .sous .body .card .card_body .prise a.button_select {
     text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 13px 32px;
     background: #FF7010;
     border-radius: 6px;
@@ -1173,12 +971,9 @@ main .sous .body .card .card_body .prise span {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    -webkit-text-decoration-line: line-through;
-            text-decoration-line: line-through;
+    text-decoration-line: line-through;
     color: #A5A5A5;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
   }
 }
 
@@ -1242,7 +1037,6 @@ main .dostavka .dostavka_body .blur {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 249, 249, 0)), to(#F9F9F9));
   background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 100%);
   z-index: 1;
 }
@@ -1368,8 +1162,7 @@ footer .footer_body .copy p {
 }
 
 .blur_back {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1389,7 +1182,6 @@ footer .footer_body .copy p {
     height: 100%;
     background: #FFFFFF;
     border-radius: 0;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     overflow-y: scroll;
   }
@@ -1412,9 +1204,7 @@ footer .footer_body .copy p {
   }
   .action_section .filters .filter_body {
     overflow-y: scroll;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
   }
   .action_section .filters .filter_body section h4 {
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -1436,8 +1226,7 @@ footer .footer_body .copy p {
     background: #FFFFFF;
     border: 1px solid #F0F0F0;
     border-radius: 6px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1452,19 +1241,10 @@ footer .footer_body .copy p {
     color: #FFFFFF;
   }
   .action_section .filters .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .action_section .filters .buttons a {
     border-radius: 6px;
@@ -1474,15 +1254,9 @@ footer .footer_body .copy p {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     width: 45%;
   }
@@ -1498,20 +1272,14 @@ footer .footer_body .copy p {
 
 .action_section .products {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 90vh;
   background: #FFFFFF;
   border-radius: 16px 16px 0px 0px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-y: scroll;
 }
@@ -1540,16 +1308,9 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_top .product-toggler .navbar-toggler-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -1562,20 +1323,16 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_top .product-toggler .navbar-toggler-icon span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translateY(1px);
-          transform: rotate(45deg) translateY(1px);
+  transform: rotate(45deg) translateY(1px);
 }
 
 .action_section .products .product_top .product-toggler .navbar-toggler-icon span:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translateY(-1px);
-          transform: rotate(-45deg) translateY(-1px);
+  transform: rotate(-45deg) translateY(-1px);
 }
 
 .action_section .products .product_body {
   overflow-y: scroll;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .action_section .products .product_body.scrolling .top img {
@@ -1584,15 +1341,9 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -1601,15 +1352,9 @@ footer .footer_body .copy p {
   width: 44px;
   height: 22px;
   border-radius: 0 6px 6px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #E23535;
   position: absolute;
   top: 10px;
@@ -1628,15 +1373,9 @@ footer .footer_body .copy p {
   width: 44px;
   height: 22px;
   border-radius: 0 6px 6px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #E23535;
   position: absolute;
   top: 10px;
@@ -1653,20 +1392,14 @@ footer .footer_body .copy p {
 .action_section .products .product_body .top img {
   width: 260px;
   height: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: 0.5s;
+  object-fit: cover;
   transition: 0.5s;
 }
 
 .action_section .products .product_body .body_section h4 {
   font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1681,47 +1414,25 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .tips-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 12px;
   overflow-x: scroll;
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-right: 12px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard:last-of-type {
@@ -1733,15 +1444,9 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.checked .img-top .bi-check2-circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 6px;
   right: 6px;
@@ -1755,21 +1460,14 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.disabled .img-top img {
-  -webkit-filter: invert(50%);
-          filter: invert(50%);
+  filter: invert(50%);
   opacity: 0.6;
 }
 
 .action_section .products .product_body .body_section .tips-body .tips-scroll .minicard.disabled .img-top .bi-x-circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 6px;
   right: 6px;
@@ -1782,15 +1480,9 @@ footer .footer_body .copy p {
   position: relative;
   width: 90px;
   height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 12px;
@@ -1812,27 +1504,16 @@ footer .footer_body .copy p {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #191919;
   margin-top: 8px;
 }
 
 .action_section .products .product_body .body_section .tip-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 6px;
@@ -1840,19 +1521,11 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .tip-buttons label {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
 }
 
@@ -1862,19 +1535,10 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .tip-size-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 6px;
@@ -1882,19 +1546,11 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .tip-size-buttons label {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
 }
 
@@ -1904,13 +1560,8 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 20px;
 }
 
@@ -1924,47 +1575,25 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   overflow-x: scroll;
   margin-top: 12px;
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-right: 12px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard:last-of-type {
@@ -1976,15 +1605,9 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.checked .img-top .bi-check2-circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 6px;
   right: 6px;
@@ -2002,21 +1625,14 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.disabled .img-top img {
-  -webkit-filter: invert(50%);
-          filter: invert(50%);
+  filter: invert(50%);
   opacity: 0.6;
 }
 
 .action_section .products .product_body .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll .minicard.disabled .img-top .bi-x-circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 6px;
   right: 6px;
@@ -2029,15 +1645,9 @@ footer .footer_body .copy p {
   position: relative;
   width: 90px;
   height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 12px;
@@ -2060,8 +1670,6 @@ footer .footer_body .copy p {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #191919;
   margin-top: 8px;
@@ -2080,19 +1688,10 @@ footer .footer_body .copy p {
 }
 
 .action_section .products .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-top: 1px solid #F0F0F0;
 }
 
@@ -2122,15 +1721,9 @@ footer .footer_body .copy p {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: 45%;
 }
@@ -2153,7 +1746,6 @@ footer .footer_body .copy p {
     width: 460px;
     height: 100%;
     border-radius: 0;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     overflow-y: scroll;
   }
@@ -2172,9 +1764,7 @@ footer .footer_body .copy p {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-transition: 0.4s;
+    transform: translate(-50%, -50%);
     transition: 0.4s;
     border-radius: 16px;
   }
@@ -2185,18 +1775,11 @@ footer .footer_body .copy p {
     opacity: 0;
   }
   .action_section .products .product_body .tips-body .tips-scroll {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .action_section .products .product_body .product_body_scrol {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .action_section .products .product_body .product_body_scrol .top {
     padding: 0 60px;
@@ -2206,11 +1789,8 @@ footer .footer_body .copy p {
     height: 450px;
   }
   .action_section .products .product_body .product_body_scrol .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .action_section .products .buttons {
     width: 50%;
@@ -2226,20 +1806,14 @@ footer .footer_body .copy p {
 
 .action_section .filters {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 80vh;
   background: #FFFFFF;
   border-radius: 16px 16px 0px 0px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-y: scroll;
 }
@@ -2268,16 +1842,9 @@ footer .footer_body .copy p {
 }
 
 .action_section .filters .filter_top .filter-toggler .navbar-toggler-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -2290,20 +1857,16 @@ footer .footer_body .copy p {
 }
 
 .action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translateY(1px);
-          transform: rotate(45deg) translateY(1px);
+  transform: rotate(45deg) translateY(1px);
 }
 
 .action_section .filters .filter_top .filter-toggler .navbar-toggler-icon span:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translateY(-1px);
-          transform: rotate(-45deg) translateY(-1px);
+  transform: rotate(-45deg) translateY(-1px);
 }
 
 .action_section .filters .filter_body {
   overflow-y: scroll;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .action_section .filters .filter_body section h4 {
@@ -2329,8 +1892,7 @@ footer .footer_body .copy p {
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 6px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2347,19 +1909,10 @@ footer .footer_body .copy p {
 }
 
 .action_section .filters .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .action_section .filters .buttons a {
@@ -2370,15 +1923,9 @@ footer .footer_body .copy p {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: 45%;
 }
@@ -2402,7 +1949,6 @@ footer .footer_body .copy p {
     height: 100%;
     background: #FFFFFF;
     border-radius: 0;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     overflow-y: scroll;
   }
@@ -2425,9 +1971,7 @@ footer .footer_body .copy p {
   }
   .action_section .filters .filter_body {
     overflow-y: scroll;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
   }
   .action_section .filters .filter_body section h4 {
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -2449,8 +1993,7 @@ footer .footer_body .copy p {
     background: #FFFFFF;
     border: 1px solid #F0F0F0;
     border-radius: 6px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -2465,19 +2008,10 @@ footer .footer_body .copy p {
     color: #FFFFFF;
   }
   .action_section .filters .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .action_section .filters .buttons a {
     border-radius: 6px;
@@ -2487,15 +2021,9 @@ footer .footer_body .copy p {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     width: 45%;
   }
@@ -2518,22 +2046,15 @@ main .mini_action {
 
 main .mini_action a {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 56px;
   height: 56px;
   background-color: #FF7010;
   border-radius: 56px;
-  -webkit-box-shadow: 0 0 5px 4px #0000001c;
-          box-shadow: 0 0 5px 4px #0000001c;
+  box-shadow: 0 0 5px 4px #0000001c;
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -2546,15 +2067,9 @@ main .mini_action a img {
 
 main .mini_action a::before {
   content: '0';
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -2572,20 +2087,14 @@ main .mini_action a::before {
 
 .action_section .korzinka {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 90vh;
   background: #FFFFFF;
   border-radius: 16px 16px 0px 0px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-y: scroll;
 }
@@ -2614,16 +2123,9 @@ main .mini_action a::before {
 }
 
 .action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -2636,33 +2138,22 @@ main .mini_action a::before {
 }
 
 .action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translateY(1px);
-          transform: rotate(45deg) translateY(1px);
+  transform: rotate(45deg) translateY(1px);
 }
 
 .action_section .korzinka .korzinka_top .korzinka-toggler .navbar-toggler-icon span:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translateY(-1px);
-          transform: rotate(-45deg) translateY(-1px);
+  transform: rotate(-45deg) translateY(-1px);
 }
 
 .action_section .korzinka .korzinka_body {
   overflow-y: scroll;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   background: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 12px;
@@ -2673,21 +2164,13 @@ main .mini_action a::before {
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card img {
   width: 84px;
   height: 84px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-direction: column;
+  flex-grow: 1;
   margin-left: 12px;
 }
 
@@ -2712,29 +2195,15 @@ main .mini_action a::before {
 }
 
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   background: #FFEEE2;
   border-radius: 6px;
   padding: 10px 0;
@@ -2742,15 +2211,9 @@ main .mini_action a::before {
 
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .counter span {
   min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -2774,12 +2237,8 @@ main .mini_action a::before {
 }
 
 .action_section .korzinka .korzinka_body .korzinka_body_scrol .card .body .counter_sum .sum {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -2792,19 +2251,10 @@ main .mini_action a::before {
 }
 
 .action_section .korzinka .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-top: 1px solid #F0F0F0;
 }
 
@@ -2834,15 +2284,9 @@ main .mini_action a::before {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: 45%;
 }
@@ -2865,7 +2309,6 @@ main .mini_action a::before {
     width: 460px;
     height: 100%;
     border-radius: 0;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     overflow-y: scroll;
   }
@@ -2884,9 +2327,7 @@ main .mini_action a::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-transition: 0.4s;
+    transform: translate(-50%, -50%);
     transition: 0.4s;
     border-radius: 16px;
   }
@@ -2897,18 +2338,11 @@ main .mini_action a::before {
     opacity: 0;
   }
   .action_section .korzinka .product_body .tips-body .tips-scroll {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .action_section .korzinka .product_body .product_body_scrol {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .action_section .korzinka .product_body .product_body_scrol .top {
     padding: 0 60px;
@@ -2918,11 +2352,8 @@ main .mini_action a::before {
     height: 450px;
   }
   .action_section .korzinka .product_body .product_body_scrol .body_section .qoshimcha-body .qoshimcha-scroll-body .qoshimcha-scroll {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .action_section .korzinka .buttons {
     width: 50%;
@@ -2936,13 +2367,503 @@ main .mini_action a::before {
   }
 }
 
+.korzinka__cards {
+  padding-top: 20px;
+}
+
+.korzinka__cards h1 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  color: #191919;
+  margin-bottom: 0;
+}
+
+.korzinka__card_body {
+  padding-top: 16px;
+}
+
+.korzinka__card {
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.korzinka__card img {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.korzinka__card .card__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .korzinka__card .card__body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.korzinka__card .card__body .text__content h4 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #191919;
+  margin-bottom: 8px;
+}
+
+.korzinka__card .card__body .text__content p {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #191919;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .korzinka__card .card__body .text__content p {
+    margin-bottom: 0;
+  }
+}
+
+.korzinka__card .card__body .summs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.korzinka__card .card__body .summs .buttons {
+  display: flex;
+  flex-direction: row;
+  min-width: 92px;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFEEE2;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.korzinka__card .card__body .summs .buttons button {
+  height: 32px;
+  padding: 0 10px;
+  border: 0;
+  background-color: transparent;
+}
+
+.korzinka__card .card__body .summs .buttons button,
+.korzinka__card .card__body .summs .buttons span {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7010;
+}
+
+.korzinka__card .card__body .summs p {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #FF7010;
+}
+
+.promo__kods {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .promo__kods {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    padding: 16px 24px;
+  }
+}
+
+.promo__kods .input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .promo__kods .input {
+    flex-grow: 0;
+    width: initial;
+  }
+}
+
+.promo__kods .input input {
+  border: 0;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  max-height: 100%;
+  flex-grow: 1;
+  border-radius: 16px;
+}
+
+.promo__kods .input input::placeholder {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #A5A5A5;
+}
+
+.promo__kods .input a {
+  background: #FF7010;
+  border-radius: 6px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo__kods .input a img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.promo__kods p {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  color: #FF7010;
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .promo__kods p {
+    margin-top: 0;
+  }
+}
+
+.adds h1 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #191919;
+  padding-top: 20px;
+  border-top: 1px solid #F0F0F0;
+}
+
+@media only screen and (min-width: 576px) {
+  .adds h1 {
+    border-top: 0;
+  }
+}
+
+.adds_scrolling {
+  overflow-x: scroll;
+}
+
+@media (min-width: 576px) {
+  .adds_scrolling {
+    overflow-x: initial;
+  }
+}
+
+.adds__scrol {
+  padding: 16px 0 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 -10px;
+}
+
+@media (min-width: 576px) {
+  .adds__scrol {
+    overflow-x: scroll;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .adds__scrol {
+    margin: 0 -15px;
+  }
+}
+
+.add__card {
+  flex-shrink: 0;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 576px) {
+  .add__card {
+    flex-direction: column;
+    width: 190px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .add__card {
+    margin: 0 15px;
+  }
+}
+
+.add__card img {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+@media only screen and (min-width: 576px) {
+  .add__card img {
+    margin-right: 0;
+    width: 100%;
+    height: initial;
+    object-fit: contain;
+  }
+}
+
+.add__card .card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 576px) {
+  .add__card .card_body {
+    padding: 16px;
+    align-items: center;
+  }
+}
+
+.add__card .card_body h4 {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #191919;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 576px) {
+  .add__card .card_body h4 {
+    margin-bottom: 8px;
+  }
+}
+
+.add__card .card_body P {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #191919;
+}
+
+@media only screen and (min-width: 576px) {
+  .add__card .card_body P {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
+
+.add__card .card_body a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7010;
+  text-decoration: none;
+  padding: 7px 16px;
+  background: #FFEEE2;
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 576px) {
+  .add__card .card_body a {
+    width: 100%;
+    background: #FF7010;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
+
+.shahsiy__malumotlar .body {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.shahsiy__malumotlar h1 {
+  margin-bottom: 16px;
+}
+
+.shahsiy__malumotlar label {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A5A5A5;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.shahsiy__malumotlar input {
+  display: flex;
+  width: 100%;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 13px 16px;
+  color: #A5A5A5;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.manzil h1 {
+  border: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.manzil .tops {
+  padding-top: 20px;
+}
+
+.manzil .buttons {
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manzil .buttons a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 13px;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #191919;
+}
+
+.manzil .buttons a.active {
+  background: #FF7010;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.manzil .dostav {
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.manzil .dostav input {
+  display: flex;
+  width: 100%;
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 13px 16px;
+  color: #A5A5A5;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.manzil .dostav label {
+  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A5A5A5;
+  display: flex;
+  margin-bottom: 8px;
+}
+
 *::-webkit-scrollbar {
   display: none;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }

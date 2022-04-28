@@ -1,0 +1,30 @@
+.container-hrm {
+    width: 100%;
+    margin: 0 auto;
+    @media only screen and (min-width: 992px) {
+        width: 850px;
+    }
+}
+@mixin my-input {
+    display: flex;
+    width: 100%;
+    font-family: $fontheader;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 13px 16px;
+    color: #A5A5A5;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+}
+@mixin my-label  {
+    font-family: $fontheader;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A5A5A5;
+    display: flex;
+}

@@ -1,0 +1,144 @@
+.adds {
+  h1 {
+    font-family: $fontheader;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #191919;
+    padding-top: 20px;
+    border-top: 1px solid #F0F0F0;
+    @media only screen and (min-width: 576px) {
+      border-top: 0;
+    }
+
+  }
+}
+
+.adds_scrolling {
+  overflow-x: scroll;
+
+  @media (min-width: 576px) {
+    overflow-x: initial;
+  }
+}
+
+.adds__scrol {
+  padding: 16px 0 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 -10px;
+
+  @media (min-width: 576px) {
+    overflow-x: scroll;
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 992px) {
+    margin: 0 -15px;
+  }
+}
+
+.add__card {
+  flex-shrink: 0;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  margin: 0 10px;
+
+  @media only screen and (min-width: 576px) {
+    flex-direction: column;
+    width: 190px;
+    text-align: center;
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 992px) {
+    margin: 0 15px;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+
+    @media only screen and (min-width: 576px) {
+      margin-right: 0;
+      width: 100%;
+      height: initial;
+      object-fit: contain;
+    }
+  }
+
+  .card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 576px) {
+      padding: 16px;
+      align-items: center;
+    }
+
+    h4 {
+      font-family: $fontheader;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #191919;
+      margin-bottom: 10px;
+
+      @media only screen and (min-width: 576px) {
+        margin-bottom: 8px;
+      }
+    }
+
+    P {
+      font-family: $fontheader;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #191919;
+
+      @media only screen and (min-width: 576px) {
+        margin-bottom: 12px;
+        text-align: center;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $fontheader;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FF7010;
+      text-decoration: none;
+      padding: 7px 16px;
+      background: #FFEEE2;
+      border-radius: 6px;
+
+      @media only screen and (min-width: 576px) {
+        width: 100%;
+        background: #FF7010;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
